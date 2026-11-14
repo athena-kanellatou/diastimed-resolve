@@ -21,3 +21,11 @@ These are scripted UI checks on synthetic scenarios. The response times are not 
 ## Remaining checks
 
 Production offline reload and a complete offline workflow; actual tab-hidden interruption; keyboard-only and assistive-technology assessment; real mobile hardware and timing; an independent usability exercise; domain review of policy assumptions. A clean extraction of the source archive installed from the lockfile and passed all 15 tests and the production build. Source is published at https://github.com/athena-kanellatou/diastimed-resolve. GitHub Actions run 43608783282 succeeded for source commit 57c0c604f890b8a8efce330e77e58d31eab0b470, including all 15 tests, benchmark reproduction, source packaging and production build. Later changes must be judged by their own workflow results.
+
+## v0.3 verification additions
+
+22 automated tests pass, including new saved-state validation, quota/read failures, capped one-time reload recovery, summary limitations and shipped service-worker cache/fallback behaviour using test doubles. The independent planner benchmark still agrees with every saved case.
+
+The preview browser verified the new factual summary and source links, context input, reduced allowance and task start. A direct reload attempt was blocked by the browser URL policy. No workaround was attempted. Therefore the new reload interaction is verified at the domain/storage level, not by that browser attempt. Production offline reload, genuine tab-hidden interruption, physical mobile timing and screen-reader use remain unverified.
+
+Prior v0.2 full-task and production observations above remain historical evidence. They are not relabelled as a fresh full-task test of v0.3.

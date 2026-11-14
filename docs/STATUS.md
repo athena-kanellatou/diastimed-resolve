@@ -1,4 +1,4 @@
-# Prototype status · 14 November 2026 · policy v0.2
+# Prototype status · 14 November 2026 · policy v0.3
 
 ## Current delivery
 
@@ -10,13 +10,21 @@ Quality amendments append separate decisions; original observations are retained
 
 ## Verification in this revision
 
-15 engine tests pass. Coverage includes all 256 evidence/device/budget combinations, direct-execution guards, cumulative session allowance, original-record preservation, task input validity, and replaying exported planner inputs. TypeScript checking and production build pass.
+22 automated tests pass. Coverage includes all 256 evidence/device/budget combinations, direct-execution guards, cumulative session allowance, original-record preservation, task input validity, and replaying exported planner inputs. TypeScript checking and production build pass.
 
 Production desktop rendering, context capture, device fallback, both-device failure, task closure and a complete 180-second scripted task with downloaded JSON were verified in the public production app. See docs/VERIFICATION.md for exact observations and limits. Offline reload, tab-hidden interruption, mobile hardware and full accessibility checks remain unverified.
 
 ## Evaluation boundaries
 
 256 synthetic planning cases: 169 complete RESOLVE plans, 167 fixed order, 169 greedy. RESOLVE and greedy tie on all 169 comparable complete-case costs. Against fixed order: 15 lower declared costs, 152 ties, no higher costs among paired complete cases. Median saving is zero seconds. No patient/astronaut evaluation, measured crew-time benefit, medical approval or human usability study.
+
+## Current v0.3 additions
+
+A shared factual review summary now separates accepted observations, measurement limits, missing evidence and the next human-review step. The same summary and optional reviewer question appear in schema 3 exports. It explicitly displays missed/early task responses without declaring performance normal.
+
+Saved-state parsing rejects malformed structures and keeps unreadable stored contents unchanged. Save failures produce a persistent memory-only warning. A task-start checkpoint enables interruption recovery after reload, with capped elapsed allocation and no result. Service-worker caching is restricted to public shell/assets. Seven-slide judging materials, a submission draft, source mapping and independent-review protocols accompany the source.
+
+New checks cover storage failures, malformed saved state, one-time reload recovery, truthful review summaries and service-worker offline fallback with network/cache doubles. That offline test is not a production-browser offline test.
 
 ## Submission work remaining
 

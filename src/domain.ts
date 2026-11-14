@@ -2,9 +2,9 @@ export type Metric = 'sleep' | 'fatigue' | 'context' | 'vigilance';
 export type Capability = 'workstation' | 'tablet';
 export type TaskSession = {device:Capability; durationSeconds:number; responseMs:number[]; premature:number; missed:number; completedAt:string};
 export type Observation = { id:string; metric:Metric; value:number|string; unit:string; recordedAt:string; quality:'usable'|'unusable'|'unknown'; method:string; source:'synthetic'|'user'; note?:string; task?:TaskSession };
-export type State = { observations:Observation[]; resources:Record<Capability,boolean>; budget:number; urgent:boolean; now:string; spentSeconds?:number; qualityDecisions?:{observationId:string; quality:Observation['quality']; at:string}[]; events:{at:string;message:string; kind?:string; details?:unknown}[] };
+export type State = { observations:Observation[]; resources:Record<Capability,boolean>; budget:number; urgent:boolean; now:string; spentSeconds?:number; pendingTask?:{checkId:string;startedAt:string}|null; reviewQuestion?:string; qualityDecisions?:{observationId:string; quality:Observation['quality']; at:string}[]; events:{at:string;message:string; kind?:string; details?:unknown}[] };
 export type Check = {id:string; title:string; supplies:Metric[]; seconds:number; capability?:Capability; prerequisites:Metric[]; why:string; sourceIds:string[]};
-export const POLICY_VERSION='resolve-evidence-v0.2';
+export const POLICY_VERSION='resolve-evidence-v0.3';
 export const requirements:{id:Metric;label:string;short:string;maxAgeHours:number;method:string;unit:string;sourceIds:string[]}[]=[
  {id:'sleep',label:'Recent sleep record',short:'Sleep',maxAgeHours:24,method:'self-report-v1',unit:'hours',sourceIds:['sleep','standard']},
  {id:'fatigue',label:'Current fatigue report',short:'Fatigue',maxAgeHours:6,method:'self-report-v1',unit:'/10',sourceIds:['sleep','reaction']},
@@ -93,6 +93,28 @@ export function recordCheck(state:State,check:Check,values:{metric:Metric;value:
  if(check.supplies.includes('vigilance')&&(!task||task.device!==check.capability||task.durationSeconds<180||task.responseMs.length<20||task.responseMs.some(x=>!Number.isFinite(x)||x<=0)||task.premature<0||task.missed<0))throw new Error('A complete three-minute task with at least 20 valid responses is required.');
  const observations:Observation[]=values.map(v=>({id:crypto.randomUUID(),...v,unit:requirements.find(r=>r.id===v.metric)!.unit,recordedAt:state.now,quality:'usable',method:v.metric==='vigilance'?'pvt-inspired-v1':'self-report-v1',source:'user',...(task?{task}:{} )}));
  for(const o of observations){const decision=assess(o,state.now);if(!decision.accepted)throw new Error(decision.reason);}
- return {...state,observations:[...state.observations,...observations],spentSeconds:(state.spentSeconds??0)+check.seconds,events:[...state.events,{at:state.now,kind:'check-recorded',message:check.title+' completed; '+check.seconds+' estimated seconds allocated.',details:{checkId:check.id,observationIds:observations.map(o=>o.id),allocatedSeconds:check.seconds}}]};
+ return {...state,pendingTask:null,observations:[...state.observations,...observations],spentSeconds:(state.spentSeconds??0)+check.seconds,events:[...state.events,{at:state.now,kind:'check-recorded',message:check.title+' completed; '+check.seconds+' estimated seconds allocated.',details:{checkId:check.id,observationIds:observations.map(o=>o.id),allocatedSeconds:check.seconds}}]};
 }
-export function packet(state:State){return {schemaVersion:2,project:'DiastiMed RESOLVE',policy:POLICY_VERSION,exportedAt:new Date().toISOString(),scenarioClock:state.now,classification:'Research prototype; evidence completeness is not medical clearance.',assumptions:{freshnessHours:Object.fromEntries(requirements.map(r=>[r.id,r.maxAgeHours])),costs:'Estimated action allocations, not observed crew performance. Completed checks consume their declared cost; interrupted tasks consume elapsed seconds.',taskQuality:'At least 180 seconds and 20 valid responses; unvalidated engineering rule.'},policySnapshot:{requirements,checks},session:{budgetSeconds:state.budget,spentSeconds:state.spentSeconds??0,remainingSeconds:remainingBudget(state),urgent:state.urgent},observations:state.observations,qualityDecisions:state.qualityDecisions??[],evidence:evidence(state),plan:plan(state),resources:state.resources,events:state.events,sources};}
+export function packet(state:State){return {schemaVersion:3,project:'DiastiMed RESOLVE',policy:POLICY_VERSION,exportedAt:new Date().toISOString(),scenarioClock:state.now,reviewQuestion:state.reviewQuestion??'',reviewSummary:reviewSummary(state),classification:'Research prototype; evidence completeness is not medical clearance.',assumptions:{freshnessHours:Object.fromEntries(requirements.map(r=>[r.id,r.maxAgeHours])),costs:'Estimated action allocations, not observed crew performance. Completed checks consume their declared cost; interrupted tasks consume elapsed seconds.',taskQuality:'At least 180 seconds and 20 valid responses; unvalidated engineering rule.'},policySnapshot:{requirements,checks},session:{budgetSeconds:state.budget,spentSeconds:state.spentSeconds??0,remainingSeconds:remainingBudget(state),urgent:state.urgent,pendingTask:state.pendingTask??null},observations:state.observations,qualityDecisions:state.qualityDecisions??[],evidence:evidence(state),plan:plan(state),resources:state.resources,events:state.events,sources};}
+
+
+// A factual review aid. No normal ranges, diagnostic inference or clearance.
+export function reviewSummary(state:State){
+ const rows=evidence(state),p=plan(state);
+ const facts=rows.filter(r=>r.accepted).map(r=>({metric:r.requirement.id,label:r.requirement.short,value:r.observation!.value,unit:r.observation!.unit,at:r.observation!.recordedAt,source:r.observation!.source}));
+ const limits:string[]=[];
+ const task=rows.find(r=>r.requirement.id==='vigilance'&&r.accepted)?.observation?.task;
+ if(task){limits.push(`Browser task: ${task.responseMs.length} captured responses, ${task.missed} timed-out cues and ${task.premature} early responses. Meeting the collection rule does not validate performance.`);}
+ else if(rows.some(r=>r.requirement.id==='vigilance'&&r.accepted))limits.push('Vigilance is a synthetic scenario value without a recorded task session.');
+ if(!rows.some(r=>r.requirement.id==='vigilance'&&r.accepted))limits.push('No usable objective task observation is available; the self-reports alone cannot establish alertness.');
+ const rejected=rows.filter(r=>!r.accepted&&r.observation);
+ rejected.forEach(r=>limits.push(`${r.requirement.short}: ${r.reason}. The displayed value is excluded from this review.`));
+ limits.push('No personal baseline or validated health thresholds are applied. Device/input latency and self-report recall limit interpretation.');
+ const next=state.urgent?'Contact the crew medical officer and follow the mission-approved emergency procedure. Routine collection remains paused.':p.status==='complete'?'Review the observations, task limitations and concern with the designated human reviewer. Export the brief for manual handoff. Collection completeness does not clear anyone for duty.':p.status==='incomplete'?'Keep this review open as incomplete. Record the unresolved requirements for the human reviewer; restore suitable equipment or revise the routine allowance before attempting the missing checks.':`Continue with “${p.actions[0]?.title}”, then review the updated evidence. Do not interpret missing measurements as reassuring results.`;
+ return {status:state.urgent?'urgent':p.status==='complete'?'collected':'incomplete',facts,limits,next,missing:rows.filter(r=>!r.accepted).map(r=>r.requirement.short),sourceIds:['sleep','reaction','exmc']};
+}
+export function recoverInterrupted(state:State,now=new Date().toISOString()):State{
+ if(!state.pendingTask)return {...state,now};
+ const elapsed=Math.max(0,Math.min(180,Math.ceil((Date.parse(now)-Date.parse(state.pendingTask.startedAt))/1000)));
+ return {...state,now,pendingTask:null,spentSeconds:(state.spentSeconds??0)+elapsed,events:[...state.events,{at:now,kind:'task-recovered',message:`Interrupted task recovered after reload. No task result saved; ${elapsed} elapsed seconds allocated.`,details:{elapsedSeconds:elapsed,checkId:state.pendingTask.checkId}}]};
+}

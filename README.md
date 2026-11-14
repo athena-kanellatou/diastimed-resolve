@@ -26,7 +26,7 @@ OpenAI ChatGPT/Codex assisted with research, concept development, code, styling 
 
 ## Session accounting and exports
 
-Completed checks allocate their declared estimated duration; interrupted tasks allocate elapsed seconds. The planner uses the remaining session allowance. Export schema 2 records all planner inputs, catalogue/policy settings, quality amendments and successful-task response times. Original records are retained but browser-local data are not authenticated or tamper-proof. Existing v1 reviews can be read into v2; historical allocation is unknown and starts at zero.
+Completed checks allocate their declared estimated duration; interrupted tasks allocate elapsed seconds. The planner uses the remaining session allowance. Export schema 3 records all planner inputs, catalogue/policy settings, quality amendments and successful-task response times, factual review summary and reviewer question. Original records are retained but browser-local data are not authenticated or tamper-proof. Existing reviews with compatible structure can be read; historical allocation is unknown and starts at zero.
 
 ## Demo and independent reproduction
 
@@ -35,3 +35,9 @@ Live demonstration: https://diastimed-resolve.appealingholly1.chatgpt.site/
 Use Node.js 22 and `npm ci` for locked dependencies. See [reproduction instructions](docs/REPRODUCE.md), [current verification status](docs/STATUS.md) and [demo runbook](docs/DEMO_RUNBOOK.md). GitHub Actions configuration is included in `.github/workflows/verify.yml`; the first remote verification run passed installation, all tests, benchmark reproduction, source packaging and the production build. See [the verified run](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43608783282).
 
 Project code is MIT licensed. See [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES.md) and [development disclosure](AI_USE.md). Research materials are linked and are not relicensed by the project.
+
+## Judging and review
+
+[Seven-slide judging deck](https://diastimed-resolve.appealingholly1.chatgpt.site/judging.html) · [Submission draft](docs/SUBMISSION_DRAFT.md) · [Challenge fit](docs/CHALLENGE_FIT.md) · [Independent review protocols](docs/REVIEW_PROTOCOL.md).
+
+The v0.3 brief separates facts, limits and next steps. Storage failure remains visible. Reload recovery saves no task result. Neither the brief nor the browser task makes a clinical assessment. Full current verification and unresolved checks are in docs/VERIFICATION.md.
