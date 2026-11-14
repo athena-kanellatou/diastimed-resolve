@@ -107,3 +107,12 @@ Self-hosted 400, 500 and 600 weight font files from Google Fonts, authored by Fl
 ## Visual references
 
 The dark presentation was informed by user-provided references, including George Railean's Astro Kit — NASA Dashboard. Reference screenshots, logos and layouts are not bundled. RESOLVE's layout, styling and controls are implemented in the repository.
+
+
+## Blue Marble globe texture
+
+`public/assets/blue-marble.jpg` is the NASA Blue Marble Earth texture distributed in the Three.js examples: https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg . NASA Blue Marble source and credit context: https://svs.gsfc.nasa.gov/2915 . Credit: NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stöckli (NASA/GSFC) and NASA Earth Observatory. The native canvas globe is decorative, with no live mission location or telemetry. The original photographic texture is retained unchanged. NASA media-use guidance applies separately from the project's MIT code licence.
+
+## Motion reference
+
+The user supplied https://gr.pinterest.com/pin/894386807233347718/ as the composition and motion reference for the mission opening. The reference footage, original copy and branding are not distributed. The RESOLVE opening, chapter content, starfield, globe renderer and transitions are implemented in source.

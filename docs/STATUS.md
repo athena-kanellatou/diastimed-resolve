@@ -40,3 +40,10 @@ The 22 existing automated checks pass. A production desktop walkthrough verified
 ## Reference-led dark presentation · 14 November 2026
 
 The dashboard now uses charcoal surfaces, locally served Space Grotesk typography, restrained gold accents and a credited NASA Earth-horizon photograph. The next action sits in the first dashboard row beside the review heading. Evidence, review brief, research views and dialogs share the dark presentation. Policy v0.3 and schema 3 remain unchanged. All 22 automated checks and benchmark verification pass. A production desktop walkthrough verified the image loading, context capture, immediate plan revision and incomplete review handoff; details are in VERIFICATION.md. Physical mobile and assistive-technology checks remain outstanding.
+
+
+## Globe-led mission opening · 14 November 2026
+
+The default page now opens with a full-screen starfield, a centred serif RESOLVE title and a rotating decorative Earth projected from the locally served NASA texture. Three user-controlled chapters explain evidence collection, adaptation and human review. Scrolling moves the globe into a side-by-side composition; workspace entry uses a brief zoom transition. The opening includes a pause control, system reduced-motion support and a static fallback. The canvas renderer is unmounted when the review workspace opens, keeping its animation separate from task timing.
+
+The original review is reachable directly at `/#workspace`; Mission overview returns without clearing observations. Dashboard accents now share the opening's midnight-blue and ice palette. All 22 existing tests pass. Production desktop checks verified the textured globe, chapter navigation, pause toggle, scroll composition and chapter-specific entry into the review brief. See VERIFICATION.md for limits. No new medical capability, validation or measured usability benefit is claimed.

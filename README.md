@@ -48,3 +48,6 @@ The review workspace shows data-bound evidence values, collection readiness, est
 
 
 The dark dashboard uses locally served Space Grotesk type and a credited NASA Earth-horizon photograph. The next action sits beside the main workspace heading; all evidence and estimated-time displays remain bound to the current review. Asset sources and licences are in THIRD_PARTY_NOTICES.md.
+
+
+The default opening is a globe-led mission presentation with three chapters (evidence, adaptive planning and human review), a scroll-driven transition and direct workspace entry. `/#workspace` opens the working dashboard directly. A Mission overview control returns to the presentation without resetting review data. Motion can be paused and follows the system reduced-motion preference. Canvas or texture failure has a static visual fallback. Globe and star effects are decorative.

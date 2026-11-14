@@ -52,3 +52,15 @@ The production desktop browser loaded the locally served NASA photograph (natura
 The moved Start check button opened the context form. Saving synthetic context changed accepted observations from 2/4 to 3/4, allocated 25 estimated seconds and left 5:35. Workstation loss selected the 3:15 tablet alternative and displayed the +15-second comparison above the collection pathway. Loss of both task devices preserved the vigilance gap; the review brief remained incomplete and displayed recorded observations, limits and the next human-review step.
 
 The change preserves the planner, storage and task engine. All 22 automated tests, benchmark verification, TypeScript checking and production build pass. Asset provenance and font licensing are in THIRD_PARTY_NOTICES.md. These observations do not establish mobile hardware, screen-reader, clinical or production-offline performance. The previous schema 3 download and historical full-task checks remain identified under their own revisions above.
+
+
+## Globe-led opening verification · 14 November 2026
+
+The supplied Pinterest video was inspected as a composition and motion reference. The published RESOLVE opening was visually checked at a 1348-pixel desktop viewport. The rotating textured globe, central title, adjacent chapter controls and side-by-side scroll section rendered. Scroll width and client width both measured 1348 pixels. The canvas had no fallback class during the successful check.
+
+- The next-chapter control changed RESOLVE to REVIEW, with the corresponding copy and review destination.
+- The pause control changed to Resume motion and exposed its pressed state.
+- The down control scrolled to the approach section and repositioned the globe beside the text.
+- Starting from the REVIEW chapter opened the existing incomplete review brief at `/#workspace`, preserving the synthetic sleep/fatigue observations, missing context/vigilance, full allowance and prior event.
+
+All 22 existing automated engine/storage/offline-double checks passed. TypeScript checking and production builds passed. These checks do not establish motion performance on physical mobile hardware, keyboard/screen-reader accessibility, actual reduced-motion media-query behaviour, static fallback behaviour or production-offline operation. No full task-timing test was repeated; the task engine is unchanged and the decorative renderer is removed when entering the workspace. Earlier production interaction and schema-3 checks above retain their own scope.

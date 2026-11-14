@@ -8,3 +8,6 @@ AI assistance was also used for the dashboard visual system and data-bound evide
 
 
 The reference-led dark revision used AI assistance for layout and CSS implementation. The Earth-horizon photograph is an actual NASA image, credited in THIRD_PARTY_NOTICES.md and the interface. User-supplied design references informed the visual direction; their images and logos are not part of the app.
+
+
+The globe-led mission opening used AI-assisted React, CSS and native canvas code, guided by the user-provided motion reference (https://gr.pinterest.com/pin/894386807233347718/). The reference video is not bundled. The globe uses an attributed NASA Blue Marble texture distributed with the Three.js examples; it is decorative and does not represent live mission tracking. No model runs in the review workflow.
