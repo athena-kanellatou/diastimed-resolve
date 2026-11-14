@@ -29,3 +29,17 @@ Production offline reload and a complete offline workflow; actual tab-hidden int
 The preview browser verified the new factual summary and source links, context input, reduced allowance and task start. A direct reload attempt was blocked by the browser URL policy. No workaround was attempted. Therefore the new reload interaction is verified at the domain/storage level, not by that browser attempt. Production offline reload, genuine tab-hidden interruption, physical mobile timing and screen-reader use remain unverified.
 
 Prior v0.2 full-task and production observations above remain historical evidence. They are not relabelled as a fresh full-task test of v0.3.
+
+
+## Dashboard presentation verification · 14 November 2026
+
+The published desktop dashboard was inspected at a 1348-pixel viewport. The page had no horizontal overflow (document scroll width and client width both 1348). This is a desktop browser observation, not a mobile or accessibility audit.
+
+- Loading the synthetic fatigue scenario showed 2/4 accepted observations, a 3:25 planned collection and a 6:00 allowance.
+- The next-action button opened the context form. Saving synthetic context updated readiness to 3/4, planned collection to 3:00 and remaining allowance to 5:35. The allocation bar exposed 25 allocated, 180 planned and 155 unallocated seconds.
+- Workstation loss revised the next action to the 3:15 tablet alternative, with the previous/revised comparison and +15-second estimated consequence visible above the pathway.
+- Disabling both devices left vigilance unresolved, displayed no eligible check and kept three accepted observations. The prominent next action opened the incomplete human-review brief.
+- An evidence overview card opened the ledger, where vigilance entry remained disabled while its device was unavailable.
+- The downloaded JSON used schema 3 and included the entered synthetic reviewer question, factual review summary, evidence, plan, resources, events and session accounting.
+
+All 22 automated checks, TypeScript checking, production build and benchmark snapshot reproduction passed for the dashboard source. No policy or task-timing change was introduced, and the historical full-task walkthrough above was not repeated for this presentation revision. Physical mobile use, assistive technology, production offline reload and genuine tab-hidden interruption remain unverified. Independent usability and domain review remain necessary.

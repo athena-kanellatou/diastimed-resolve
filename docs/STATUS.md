@@ -6,7 +6,7 @@ A redesigned crew evidence workspace replaces the decorative dashboard. The main
 
 Execution now enforces the same prerequisites, device availability, urgent state and remaining allowance at direct entry and at save. Completed checks allocate their declared estimated cost against the session total; interrupted tasks allocate elapsed time. This is allocation accounting, not measured crew workload or proven time savings.
 
-Quality amendments append separate decisions; original observations are retained. Events are no longer truncated at 50. Browser storage is editable and is not an authenticated or tamper-proof audit system. Export schema 2 includes all planner inputs, policy/catalogue snapshots, original observations, quality decisions and raw successful-task response times. The task uses a monotonic timer, ignores held-key repeats, and records early responses and missed cues. Modal keyboard focus is contained and restored; reduced-motion and print styles are included.
+Quality amendments append separate decisions; original observations are retained. Events are no longer truncated at 50. Browser storage is editable and is not an authenticated or tamper-proof audit system. Export schema 3 includes all planner inputs, policy/catalogue snapshots, original observations, quality decisions and raw successful-task response times. The task uses a monotonic timer, ignores held-key repeats, and records early responses and missed cues. Modal keyboard focus is contained and restored; reduced-motion and print styles are included.
 
 ## Verification in this revision
 
@@ -29,3 +29,9 @@ New checks cover storage failures, malformed saved state, one-time reload recove
 ## Submission work remaining
 
 Independent task rehearsal and domain feedback; final demo recording; source/licence/dependency/credits review; accessible judge links; confirmed challenge fit, local requirements and submission. Site audience is public; signed-out browser access was verified. This prototype is not NASA-developed, NASA-endorsed, clinically validated or submitted to the competition.
+
+## Dashboard presentation revision · 14 November 2026
+
+A dedicated dashboard now presents the same policy through an evidence overview, proportional session-allocation bar, ordered collection pathway, next action, equipment constraints and recent decision events. Desktop navigation uses a fixed rail and mobile uses labelled tabs. Plan comparisons remain above the pathway. Every displayed number comes from current observations, requirements, events or estimated action allocations; no simulated telemetry, medical risk score or invented trend was added. Review/storage/recovery behaviour and policy v0.3 are preserved.
+
+The 22 existing automated checks pass. A production desktop walkthrough verified dashboard actions, context capture, equipment fallback, blocked evidence, ledger navigation, the review brief and schema 3 export. See docs/VERIFICATION.md for the observations and limits. Prior medical, offline, mobile hardware and independent-review limits still apply.

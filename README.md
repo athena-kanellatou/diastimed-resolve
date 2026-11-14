@@ -41,3 +41,7 @@ Project code is MIT licensed. See [LICENSE](LICENSE), [third-party notices](THIR
 [Seven-slide judging deck](https://diastimed-resolve.appealingholly1.chatgpt.site/judging.html) · [Submission draft](docs/SUBMISSION_DRAFT.md) · [Challenge fit](docs/CHALLENGE_FIT.md) · [Independent review protocols](docs/REVIEW_PROTOCOL.md).
 
 The v0.3 brief separates facts, limits and next steps. Storage failure remains visible. Reload recovery saves no task result. Neither the brief nor the browser task makes a clinical assessment. Full current verification and unresolved checks are in docs/VERIFICATION.md.
+
+## Dashboard
+
+The review workspace shows data-bound evidence values, collection readiness, estimated session allocations, an ordered pathway, the next eligible check and recent activity. Equipment changes surface the previous and revised plans. No health score or invented physiological trend is shown.
