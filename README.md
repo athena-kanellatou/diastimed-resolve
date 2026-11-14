@@ -1,12 +1,16 @@
 # DiastiMed RESOLVE
 
+[![Verify RESOLVE](https://github.com/athena-kanellatou/diastimed-resolve/actions/workflows/verify.yml/badge.svg)](https://github.com/athena-kanellatou/diastimed-resolve/actions/workflows/verify.yml)
+
+[Live demo](https://diastimed-resolve.appealingholly1.chatgpt.site/) · [Verification record](docs/VERIFICATION.md) · [Reproduce locally](docs/REPRODUCE.md)
+
 Research prototype for NASA Space Apps 2026, Create Health Monitoring Software for Astronauts on Space Missions. Team: DiastiMed; Athens.
 
 An explainable evidence-collection planner: retain usable observations, find missing evidence, guide a check, replan when resources change, and export a traceable review. Evidence completeness is not medical clearance.
 
 ## Run
 
-`npm install` · `npm run dev` · `npm run build` · `npm test` · `npm run benchmark`
+`npm ci` · `npm run dev` · `npm run build` · `npm test` · `npm run benchmark`
 
 ## What is real
 
@@ -28,6 +32,6 @@ Completed checks allocate their declared estimated duration; interrupted tasks a
 
 Live demonstration: https://diastimed-resolve.appealingholly1.chatgpt.site/
 
-Use Node.js 22 and `npm ci` for locked dependencies. See [reproduction instructions](docs/REPRODUCE.md), [current verification status](docs/STATUS.md) and [demo runbook](docs/DEMO_RUNBOOK.md). GitHub Actions configuration is included in `.github/workflows/verify.yml`; remote CI execution remains pending until the package is pushed to GitHub.
+Use Node.js 22 and `npm ci` for locked dependencies. See [reproduction instructions](docs/REPRODUCE.md), [current verification status](docs/STATUS.md) and [demo runbook](docs/DEMO_RUNBOOK.md). GitHub Actions configuration is included in `.github/workflows/verify.yml`; the first remote verification run passed installation, all tests, benchmark reproduction, source packaging and the production build. See [the verified run](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43608783282).
 
 Project code is MIT licensed. See [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES.md) and [development disclosure](AI_USE.md). Research materials are linked and are not relicensed by the project.

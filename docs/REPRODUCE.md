@@ -14,7 +14,7 @@ Open the local address Vite prints. The app requires no API keys, cloud accounts
 
 The benchmark enumerates 16 evidence subsets, four device states and four budgets. It writes all 256 cases to public/benchmark.json and updates docs/EVALUATION.md. Generated timestamps differ on each run. `node scripts/verify-benchmark.mjs` compares all cases and summaries with the committed file when run in a Git checkout. It requires no network.
 
-GitHub Actions runs locked dependency installation, tests, type checking, build, benchmark reproduction and source packaging on pushes and pull requests. Until a workflow run is observed on GitHub, its result is pending; local success is not a remote CI result.
+GitHub Actions runs locked dependency installation, tests, type checking, build, benchmark reproduction and source packaging on pushes and pull requests. The first remote run succeeded: https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43608783282. Each subsequent commit has its own workflow result.
 
 To create the downloadable source archive:
 
