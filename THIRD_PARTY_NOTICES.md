@@ -94,3 +94,16 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+## Earth-horizon photograph
+
+`public/assets/earth-horizon.jpg`: NASA photograph ISS064-E-005209, 20 November 2020. Source: https://www.nasa.gov/image-article/earths-limb-or-horizon/ ; image: https://www.nasa.gov/wp-content/uploads/2023/03/iss064e005209.jpg . Credit: NASA. Used as decorative imagery, with attribution in the interface. NASA imagery is separate from the project's MIT-licensed code; NASA media-use guidance applies: https://www.nasa.gov/nasa-brand-center/images-and-media/ . Its use does not imply NASA endorsement.
+
+## Space Grotesk
+
+Self-hosted 400, 500 and 600 weight font files from Google Fonts, authored by Florian Karsten. Licensed under SIL Open Font License 1.1; full copyright and licence are included in `public/assets/SpaceGrotesk-OFL.txt`. Source: https://github.com/google/fonts/tree/main/ofl/spacegrotesk . Font files retain their original names only in the licence and are not modified.
+
+## Visual references
+
+The dark presentation was informed by user-provided references, including George Railean's Astro Kit — NASA Dashboard. Reference screenshots, logos and layouts are not bundled. RESOLVE's layout, styling and controls are implemented in the repository.

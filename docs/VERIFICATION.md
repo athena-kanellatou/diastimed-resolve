@@ -43,3 +43,12 @@ The published desktop dashboard was inspected at a 1348-pixel viewport. The page
 - The downloaded JSON used schema 3 and included the entered synthetic reviewer question, factual review summary, evidence, plan, resources, events and session accounting.
 
 All 22 automated checks, TypeScript checking, production build and benchmark snapshot reproduction passed for the dashboard source. No policy or task-timing change was introduced, and the historical full-task walkthrough above was not repeated for this presentation revision. Physical mobile use, assistive technology, production offline reload and genuine tab-hidden interruption remain unverified. Independent usability and domain review remain necessary.
+
+
+## Reference-led dark presentation verification · 14 November 2026
+
+The production desktop browser loaded the locally served NASA photograph (natural width 1041 pixels) and dark dashboard with the next action in its first row. Document scroll width and client width both measured 1348 pixels. The scenario dialog and incomplete human-review brief were visually inspected in the dark theme.
+
+The moved Start check button opened the context form. Saving synthetic context changed accepted observations from 2/4 to 3/4, allocated 25 estimated seconds and left 5:35. Workstation loss selected the 3:15 tablet alternative and displayed the +15-second comparison above the collection pathway. Loss of both task devices preserved the vigilance gap; the review brief remained incomplete and displayed recorded observations, limits and the next human-review step.
+
+The change preserves the planner, storage and task engine. All 22 automated tests, benchmark verification, TypeScript checking and production build pass. Asset provenance and font licensing are in THIRD_PARTY_NOTICES.md. These observations do not establish mobile hardware, screen-reader, clinical or production-offline performance. The previous schema 3 download and historical full-task checks remain identified under their own revisions above.

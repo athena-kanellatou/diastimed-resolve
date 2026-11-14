@@ -35,3 +35,8 @@ Independent task rehearsal and domain feedback; final demo recording; source/lic
 A dedicated dashboard now presents the same policy through an evidence overview, proportional session-allocation bar, ordered collection pathway, next action, equipment constraints and recent decision events. Desktop navigation uses a fixed rail and mobile uses labelled tabs. Plan comparisons remain above the pathway. Every displayed number comes from current observations, requirements, events or estimated action allocations; no simulated telemetry, medical risk score or invented trend was added. Review/storage/recovery behaviour and policy v0.3 are preserved.
 
 The 22 existing automated checks pass. A production desktop walkthrough verified dashboard actions, context capture, equipment fallback, blocked evidence, ledger navigation, the review brief and schema 3 export. See docs/VERIFICATION.md for the observations and limits. Prior medical, offline, mobile hardware and independent-review limits still apply.
+
+
+## Reference-led dark presentation · 14 November 2026
+
+The dashboard now uses charcoal surfaces, locally served Space Grotesk typography, restrained gold accents and a credited NASA Earth-horizon photograph. The next action sits in the first dashboard row beside the review heading. Evidence, review brief, research views and dialogs share the dark presentation. Policy v0.3 and schema 3 remain unchanged. All 22 automated checks and benchmark verification pass. A production desktop walkthrough verified the image loading, context capture, immediate plan revision and incomplete review handoff; details are in VERIFICATION.md. Physical mobile and assistive-technology checks remain outstanding.

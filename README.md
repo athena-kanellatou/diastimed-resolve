@@ -45,3 +45,6 @@ The v0.3 brief separates facts, limits and next steps. Storage failure remains v
 ## Dashboard
 
 The review workspace shows data-bound evidence values, collection readiness, estimated session allocations, an ordered pathway, the next eligible check and recent activity. Equipment changes surface the previous and revised plans. No health score or invented physiological trend is shown.
+
+
+The dark dashboard uses locally served Space Grotesk type and a credited NASA Earth-horizon photograph. The next action sits beside the main workspace heading; all evidence and estimated-time displays remain bound to the current review. Asset sources and licences are in THIRD_PARTY_NOTICES.md.
