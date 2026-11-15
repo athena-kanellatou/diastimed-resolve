@@ -64,3 +64,8 @@ The supplied Pinterest video was inspected as a composition and motion reference
 - Starting from the REVIEW chapter opened the existing incomplete review brief at `/#workspace`, preserving the synthetic sleep/fatigue observations, missing context/vigilance, full allowance and prior event.
 
 All 22 existing automated engine/storage/offline-double checks passed. TypeScript checking and production builds passed. These checks do not establish motion performance on physical mobile hardware, keyboard/screen-reader accessibility, actual reduced-motion media-query behaviour, static fallback behaviour or production-offline operation. No full task-timing test was repeated; the task engine is unchanged and the decorative renderer is removed when entering the workspace. Earlier production interaction and schema-3 checks above retain their own scope.
+
+
+## Submission disclosure metadata · 15 November 2026
+
+Machine-readable SI credits were added to package.json, public/development-credits.json, the HTML head and exported review packets. The source archive includes the credits file. They distinguish SI-assisted code and authored synthetic scenarios from user-entered observations and deterministically computed benchmark results. No generative image/video model or generated audio was used. The judging PDF was checked with a PDF parser: seven pages; Author metadata acknowledges AI-assisted development. An anonymous request to the raw public GitHub PDF returned HTTP 200. Collection policy and benchmark cases are unchanged.

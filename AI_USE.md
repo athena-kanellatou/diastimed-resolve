@@ -11,3 +11,6 @@ The reference-led dark revision used AI assistance for layout and CSS implementa
 
 
 The globe-led mission opening used AI-assisted React, CSS and native canvas code, guided by the user-provided motion reference (https://gr.pinterest.com/pin/894386807233347718/). The reference video is not bundled. The globe uses an attributed NASA Blue Marble texture distributed with the Three.js examples; it is decorative and does not represent live mission tracking. No model runs in the review workflow.
+
+
+Machine-readable code, data and presentation provenance is provided in public/development-credits.json, referenced by package.json and the HTML head. Synthetic initial scenarios are SI-assisted authored demonstrations; benchmark results are deterministically enumerated by SI-assisted code. User-entered records are not represented as SI-generated. No generative image/video model or generated audio was used; the globe and starfield are procedural visualisations created by SI-assisted code.

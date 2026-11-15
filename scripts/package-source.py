@@ -13,7 +13,7 @@ files = [root / name for name in root_files]
 for directory in directories:
     files.extend(p for p in (root / directory).rglob('*') if p.is_file()
                  and '__pycache__' not in p.parts and p.suffix != '.pyc')
-files.extend(root / name for name in ['public/sw.js', 'public/benchmark.json', 'public/AI_USE.md', 'public/judging.html', 'public/DiastiMed_RESOLVE_judging.pdf', 'public/DiastiMed_RESOLVE_judging.pptx'])
+files.extend(root / name for name in ['public/development-credits.json', 'public/sw.js', 'public/benchmark.json', 'public/AI_USE.md', 'public/judging.html', 'public/DiastiMed_RESOLVE_judging.pdf', 'public/DiastiMed_RESOLVE_judging.pptx'])
 files.extend(p for p in (root / 'public' / 'judging').glob('*.png'))
 files.extend(p for p in (root / 'public' / 'assets').rglob('*') if p.is_file())
 missing = [str(p.relative_to(root)) for p in files if not p.exists()]

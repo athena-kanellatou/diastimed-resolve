@@ -1,0 +1,42 @@
+{
+  "project": "DiastiMed RESOLVE",
+  "schemaVersion": 1,
+  "tools": [
+    "OpenAI ChatGPT",
+    "OpenAI Codex"
+  ],
+  "code": {
+    "siAssisted": true,
+    "scope": [
+      "implementation planning",
+      "React and TypeScript source",
+      "CSS and canvas visualisation",
+      "tests",
+      "build and packaging scripts"
+    ]
+  },
+  "data": {
+    "syntheticScenarioRecords": "SI-assisted authored demonstration data; not astronaut or patient records",
+    "engineeringBenchmark": "Deterministically enumerated by SI-assisted source code; not generated clinical evidence",
+    "userEnteredObservations": "Entered by the user; not represented as SI-generated"
+  },
+  "textAndPresentation": {
+    "siAssisted": true,
+    "scope": [
+      "research synthesis",
+      "interface text",
+      "documentation",
+      "judging slides",
+      "submission drafts"
+    ]
+  },
+  "media": {
+    "generativeImageModelUsed": false,
+    "generativeVideoModelUsed": false,
+    "generatedAudioUsed": false,
+    "description": "NASA source photographs and texture are credited and retained as source assets. The procedural globe and starfield are rendered by SI-assisted code; screenshots depict the actual prototype."
+  },
+  "runtimeModelUsed": false,
+  "disclosure": "https://github.com/athena-kanellatou/diastimed-resolve/blob/main/AI_USE.md",
+  "thirdPartyNotices": "https://github.com/athena-kanellatou/diastimed-resolve/blob/main/THIRD_PARTY_NOTICES.md"
+}
