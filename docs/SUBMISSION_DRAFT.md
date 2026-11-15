@@ -34,7 +34,7 @@ NASA HRP sleep-risk material motivates the sleep/context inputs. The Reaction Se
 256 synthetic cases: RESOLVE 169 feasible complete plans, greedy 169, fixed 167. RESOLVE and greedy tie on all 169 paired-complete costs. Against fixed order: 15 lower-cost, 152 ties, zero higher-cost paired cases. Median assumed saving zero seconds. These are software checks under an illustrative cost model, not patients or measured crew time. No astronaut co-design or clinical review. Team-reported formative usability results: 13/25 initial completions and 12/15 revised completions, including 8/9 returning and 4/6 new participants. Counts, provenance and interpretation limits are in USABILITY.md.
 
 ## AI use
-ChatGPT/Codex assisted research, concept development, implementation, synthetic scenarios, design, documentation, test design and judging materials. No model operates in the application. Actual application screenshots show synthetic software states. No NASA endorsement or clinical approval is implied. Full disclosure: AI_USE.md.
+ChatGPT/Codex assisted research, concept development, implementation, synthetic scenarios, design, documentation, test design and judging materials. No model operates in the application. Clinical review demonstrations use synthetic observations; the usability panel displays team-reported human-participant aggregates. No NASA endorsement or clinical approval is implied. Full disclosure: AI_USE.md.
 
 ## Team contributions (fill with actual confirmed names)
 - [Name]: [work personally performed and verified]
