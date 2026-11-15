@@ -15,7 +15,18 @@
     "outcomes": "not established from available session records",
     "completionRate": null
   },
-  "expertReview": "pending",
+  "expertReview": {
+    "status": "owner-confirmed scoped occupational-health review received",
+    "reviewId": "OH-01",
+    "record": "https://github.com/athena-kanellatou/diastimed-resolve/blob/main/docs/DOMAIN_REVIEW.md",
+    "reviewerRole": "occupational health professional",
+    "source": "comments relayed by team owner; personal inspection and authorship explicitly confirmed",
+    "actualReviewDate": null,
+    "reviewedBuild": null,
+    "publicAttribution": "role-only; permission for naming and quotation not established",
+    "numericalPolicyEndorsement": false,
+    "participantComprehensionEstablished": false
+  },
   "clinicalValidation": false,
   "judgingPresentation": "seven-slide baseline snapshot; no new human outcomes added"
 }

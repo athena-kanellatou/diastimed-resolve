@@ -18,7 +18,7 @@ The root-hosted scripted browser check completed an actual 180-second task, manu
 | Additional round's tested build | Owner identifies baseline `39e4034d1ed40bb9b385c1eee82359c6e2215078`; not assigned to the later technical revision |
 | Additional round's task outcomes and assistance | Not established from traceable session records; no completion rate calculated |
 | Individual durations, quotations, devices and failure frequencies | Not established by the available records |
-| Expert/domain review | No documented external review received |
+| Scoped occupational-health review | OH-01 received; owner confirms personal inspection and reviewer-provided comments. Role-only paraphrase; exact date/build and public attribution permission not supplied. See DOMAIN_REVIEW.md |
 | Prospective V2 protocol | Prepared; no documented pilot, prospective freeze or sessions conducted under that protocol |
 
 Participation reported by the team is not independently verified. No total distinct-person count is calculated across all rounds because participant overlap has not been established. Historical aggregate results remain separate from the additional reported participation and from software scenarios.
@@ -27,6 +27,6 @@ Illustrative individual-session examples do not supply observed outcomes. The ex
 
 ## Current delivery boundary
 
-Technical implementation, reproducible analysis, review materials and transparent reporting can be released with these limitations. Human completion rates, participant-driven change claims, reviewer approval, clinical validity, astronaut usability and measured crew-time savings require evidence not supplied here. The pending human evidence does not block publication of the accurately described software prototype.
+Technical implementation, reproducible analysis, review materials and transparent reporting can be released with these limitations. Additional human completion rates, participant-driven change claims, blanket reviewer approval, clinical validity, astronaut usability and measured crew-time savings remain unestablished. The received occupational-health review is limited to the reported workflow/presentation scope. The pending human evidence does not block publication of the accurately described software prototype.
 
 No new participant study, reviewer contact, competition submission or personal declaration is performed by this release. The seven-slide judging deck remains a labelled baseline presentation snapshot; current verification and sensitivity results are available in the app, source package and CI records.

@@ -9,7 +9,7 @@ This revision checks software consistency, makes assumptions inspectable, and pr
 | Baseline | BASELINE_VALIDATION.md | Inspected | main SHA and concrete source findings |
 | Policy | POLICY_REGISTER.md, src/policy.ts | Implemented, unvalidated | Default values preserved; shared assessment/planner/export policy |
 | Sensitivity | SENSITIVITY.md, public/sensitivity | Calculated synthetic results | Saved inputs/configuration/cases and byte reproduction |
-| Expert | DOMAIN_REVIEW_PACK.md, blank feedback log | Pending authentic reviewer | Reviewer role, scope, date, build and actual feedback |
+| Expert | DOMAIN_REVIEW.md and OH-01 record | Scoped occupational-health review received, relayed and confirmed by owner; attribution/date/build not established | Reviewer role, scope, date, build and actual feedback |
 | Usability V2 | USABILITY_PROTOCOL_V2.md, blank CSVs | Prepared; no documented prospective freeze or sessions | Actual pilot, final freeze SHA/time, fresh-participant rows |
 | Follow-up | CHANGE_LOG_VALIDATION.md | Engineering changes recorded | Real review/usability findings linked when supplied |
 
@@ -34,4 +34,4 @@ No invitation, recruitment, email or competition submission is authorized by pre
 
 ## Release with the available evidence
 
-The available evidence inventory is final for this technical release in AVAILABLE_EVIDENCE.md. The owner reports additional participation but the supplied materials do not establish additional human outcomes. Missing fields remain unavailable; no further records are assumed. Release the working prototype and reproducible technical evidence with expert review and adequately documented prospective usability evaluation pending. The human-dependent sequence above remains a future validation plan, not a prerequisite for describing the implemented software accurately.
+The available evidence inventory is final for this technical release in AVAILABLE_EVIDENCE.md. The owner reports additional participation but the supplied materials do not establish additional human outcomes. Missing fields remain unavailable; no further records are assumed. Release the working prototype and reproducible technical evidence with the received scoped occupational-health review recorded, and numerical policy validation and adequately documented prospective usability evaluation pending. The human-dependent sequence above remains a future validation plan, not a prerequisite for describing the implemented software accurately.

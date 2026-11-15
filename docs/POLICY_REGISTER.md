@@ -2,7 +2,7 @@
 
 Policy **resolve-evidence-v0.4**, export schema **4**. Numerical defaults are unchanged from v0.3. Version change records shared configuration, stricter technical capture checks, canonical actions and deterministic timestamp ties. Historical benchmark and human results are not reclassified as fresh validation.
 
-The complete machine-readable register is `validation/policy-register.csv`. Each entry includes source scope, unsupported inference, actual selection rationale (or **not documented**), failure mode, alternatives, tests, pending reviewer input and status. All numeric windows and allocations remain assumptions; **no reviewer approval** has been received. Analyst alternatives are stress-test values, never medical recommendations.
+The complete machine-readable register is `validation/policy-register.csv`. Each entry includes source scope, unsupported inference, actual selection rationale (or **not documented**), failure mode, alternatives, tests, pending reviewer input and status. All numeric windows and allocations remain assumptions; **no numerical policy endorsement** has been received. Scoped occupational-health workflow/handoff comments are recorded separately in DOMAIN_REVIEW.md. Analyst alternatives are stress-test values, never medical recommendations.
 
 | ID | Rule | Current value | Alternative / analysis | Scientific status |
 |---|---|---|---|---|

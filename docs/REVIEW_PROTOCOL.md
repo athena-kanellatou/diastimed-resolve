@@ -1,6 +1,6 @@
 # Review protocols — index
 
-The original draft below remains historical; it is not evidence of a performed protocol. Use [DOMAIN_REVIEW_PACK.md](DOMAIN_REVIEW_PACK.md) for the prepared expert review and [USABILITY_PROTOCOL_V2.md](USABILITY_PROTOCOL_V2.md) for the candidate prospective study. Blank forms are in `validation/`. No external review or V2 session has been recorded.
+The original draft below remains historical; it is not evidence of a performed protocol. Use [DOMAIN_REVIEW_PACK.md](DOMAIN_REVIEW_PACK.md) for the prepared expert review and [USABILITY_PROTOCOL_V2.md](USABILITY_PROTOCOL_V2.md) for the candidate prospective study. Blank forms are in `validation/`. Scoped occupational-health review OH-01 has since been relayed and confirmed by the owner; see DOMAIN_REVIEW.md. No sessions are documented under the prospective V2 protocol.
 
 ---
 

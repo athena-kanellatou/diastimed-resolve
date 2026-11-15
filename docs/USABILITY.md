@@ -37,7 +37,7 @@ The counts represent 40 reported participations across the two rounds. They corr
 | Devices and browsers | Not supplied |
 | Participant backgrounds and recruitment | Not supplied; astronaut, clinician, adult or representative-sample status is not established |
 | Satisfaction | No confirmed question, scale or score |
-| Domain review | No documented domain-review feedback in the inspected records |
+| Domain review | A subsequent scoped occupational-health review is relayed and confirmed by the owner; see DOMAIN_REVIEW.md. It does not establish participant outcomes or clinical validation. |
 | Independent verification | Team-reported aggregate counts; participant-level records were not supplied for review |
 
 Implementation records document next-action guidance, previous/revised plan comparisons, explicit unresolved-evidence messages and a structured human-review brief. They do not establish which participant mistake prompted each change or how many participants benefited from each change.

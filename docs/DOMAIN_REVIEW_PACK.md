@@ -1,6 +1,6 @@
 # RESOLVE — focused expert review pack
 
-**Requested review, not approval. Status: pending.** Prepared 15 November 2026. Allow roughly 20–30 minutes, or record the actual method/duration. Build under review must be the exact SHA recorded in the reviewer form; the public main may differ from a proposed branch.
+**Review pack. Scoped workflow review OH-01 has been received through the team owner; see DOMAIN_REVIEW.md. Numerical and measurement questions remain open.** Prepared 15 November 2026. Allow roughly 20–30 minutes, or record the actual method/duration. Build under review must be the exact SHA recorded in the reviewer form; the public main may differ from a proposed branch.
 
 ## Purpose and limits
 

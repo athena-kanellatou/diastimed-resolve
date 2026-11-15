@@ -1,0 +1,50 @@
+{
+  "reviewId": "OH-01",
+  "status": "owner-confirmed scoped occupational-health review received",
+  "source": "Reviewer comments relayed by the team owner; the owner explicitly confirms personal inspection and that the reviewer provided these comments.",
+  "reviewerRole": "occupational health professional",
+  "reviewerIdentity": "not published; public attribution permission not established",
+  "reportDate": "2026-11-15",
+  "actualReviewDate": null,
+  "reviewedBuild": null,
+  "durationMinutes": null,
+  "scope": [
+    "presentation of fatigue, sleep and workload/context",
+    "visibility of missing or uncertain evidence",
+    "human-review handoff",
+    "medical-clearance and manual-export boundaries"
+  ],
+  "findings": [
+    {
+      "id": "OH-01-A",
+      "summary": "Positive assessment of separating sleep/fatigue reports, context and experimental vigilance, with provenance and limitations visible.",
+      "teamDecision": "Retain the separation of observations and avoid an unsupported combined medical conclusion."
+    },
+    {
+      "id": "OH-01-B",
+      "summary": "Positive assessment of visible missing/stale/unusable evidence, unresolved vigilance after both-device loss and provisional freshness assumptions.",
+      "teamDecision": "Retain explicit gaps and the stated provisional status of the windows; no numeric policy endorsement inferred."
+    },
+    {
+      "id": "OH-01-C",
+      "summary": "Positive assessment of a handoff that preserves collected facts, unknowns and follow-up while leaving interpretation to a responsible human.",
+      "teamDecision": "Retain the facts/limits/next-step structure and manual handoff."
+    },
+    {
+      "id": "OH-01-D",
+      "summary": "Positive comments on medical-clearance and manual-export boundaries; the relayed wording also asserts user understanding.",
+      "teamDecision": "Record the reviewer comment as a scoped assessment. No linked user observations were provided, so participant comprehension or completion rates are not established. Reinforce manual handoff next to export and in its confirmation message."
+    }
+  ],
+  "limitations": [
+    "No actual review date, exact tested SHA or review duration supplied.",
+    "Reviewer credentials and independence were not independently checked.",
+    "Public naming and direct-quotation permission not established; public record is role-only paraphrase.",
+    "No endorsement of numeric freshness windows, response-count gates, browser timing, clinical validity or astronaut suitability.",
+    "No recorded participant outcomes or measured benefit established."
+  ],
+  "clinicalValidation": false,
+  "numericalPolicyEndorsement": false,
+  "participantComprehensionEstablished": false,
+  "followUp": "Revised manual-export wording has not been re-reviewed by the professional or tested with fresh participants."
+}
