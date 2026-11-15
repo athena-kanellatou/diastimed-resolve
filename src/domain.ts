@@ -43,7 +43,8 @@ export function assess(observation:Observation,now:string,policy:Policy=DEFAULT_
  return {accepted:true,reason:`Usable within the assumed ${req.maxAgeHours}-hour window`};
 }
 export function evidence(state:State,policy:Policy=DEFAULT_POLICY){return policy.requirements.map(req=>{
- const entries=state.observations.filter(o=>o.metric===req.id).reverse().sort((a,b)=>Date.parse(b.recordedAt)-Date.parse(a.recordedAt));
+ const timestamp=(o:Observation)=>Number.isFinite(Date.parse(o.recordedAt))?Date.parse(o.recordedAt):-Infinity;
+ const entries=state.observations.filter(o=>o.metric===req.id).reverse().sort((a,b)=>timestamp(b)-timestamp(a));
  const effective=(o:Observation)=>({...o,quality:[...(state.qualityDecisions??[])].reverse().find(d=>d.observationId===o.id)?.quality??o.quality});
  const usable=entries.find(o=>assess(effective(o),state.now,policy).accepted);
  return {requirement:req,observation:usable??entries[0]??null,accepted:!!usable,reason:usable?assess(effective(usable),state.now,policy).reason:entries[0]?assess(effective(entries[0]),state.now,policy).reason:'No observation recorded'};

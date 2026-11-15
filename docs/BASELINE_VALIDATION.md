@@ -11,6 +11,7 @@ Inspected 15 November 2026. Repository main was `39e4034d1ed40bb9b385c1eee82359c
 | Task parameters implicit in UI and incomplete export snapshot | ReactionTask and packet | Shared typed policy; schema 4 snapshot includes task settings |
 | Original oracle omits partial plans and spent allowance | tests/domain.test.ts | Separate permutation reference plus new coverage/cost tests |
 | Equal timestamp records select earlier insertion | evidence stable sort | Prefer later append when timestamps tie, retaining older usable fallback |
+| Invalid timestamp disrupts valid-record sorting | Reproduced newest/bad/older ordering selected older | Sort invalid dates last; regression test |
 | Human aggregates lack individual observations | USABILITY.md | Preserve historical counts; prepare prospective study separately |
 | Clinician/human-factors review absent | Owner handoff | Prepare review pack; status stays pending |
 

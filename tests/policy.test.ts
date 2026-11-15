@@ -59,6 +59,7 @@ test('invalid analyst settings are rejected',()=>{
 
 test('equal timestamps prefer the later usable append and retain older usable fallback',()=>{
  const s=fixed(),original=s.observations[0];s.observations.push({...original,id:'later',value:6});assert.equal(evidence(s)[0].observation!.id,'later');s.observations.push({...original,id:'invalid-latest',quality:'unusable'});assert.equal(evidence(s)[0].observation!.id,'later');
+ s.observations=[{...original,id:'newest'},{...original,id:'invalid-date',recordedAt:'invalid'},{...original,id:'older',recordedAt:new Date(Date.parse(now)-3600000).toISOString()}];assert.equal(evidence(s)[0].observation!.id,'newest');
 });
 test('legacy reviews remain loadable; stale or missing task metadata cannot become fresh accepted vigilance',()=>{
  const s=fixed(),t=task();const o=s.observations.find(o=>o.metric==='vigilance')!;o.source='user';

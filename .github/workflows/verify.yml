@@ -47,12 +47,17 @@ jobs:
           mkdir -p artifacts
           npm exec vite preview -- --host 127.0.0.1 --port 4173 > artifacts/preview.log 2>&1 &
           preview_pid=$!
-          trap 'kill "$preview_pid"' EXIT
+          project_preview_pid=''
+          trap 'kill "$preview_pid" ${project_preview_pid:+"$project_preview_pid"}' EXIT
           node scripts/wait-preview.mjs
           RESOLVE_URL=http://127.0.0.1:4173/ node scripts/browser-verification.mjs
           npm run build -- --base=/diastimed-resolve/
-          RESOLVE_URL=http://127.0.0.1:4173/diastimed-resolve/ RESOLVE_BROWSER_QUICK=1 RESOLVE_BROWSER_OUTPUT=artifacts/browser-project-path node scripts/browser-verification.mjs
+          npm exec vite preview -- --host 127.0.0.1 --port 4174 --base=/diastimed-resolve/ > artifacts/project-preview.log 2>&1 &
+          project_preview_pid=$!
+          RESOLVE_URL=http://127.0.0.1:4174/diastimed-resolve/ node scripts/wait-preview.mjs
+          RESOLVE_URL=http://127.0.0.1:4174/diastimed-resolve/ RESOLVE_BROWSER_QUICK=1 RESOLVE_BROWSER_OUTPUT=artifacts/browser-project-path node scripts/browser-verification.mjs
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: always()
         with:
           name: resolve-build-and-evidence
           path: |
