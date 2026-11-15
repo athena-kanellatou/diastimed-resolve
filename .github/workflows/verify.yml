@@ -15,7 +15,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -32,18 +32,35 @@ jobs:
         run: npm run benchmark
       - name: Verify benchmark against saved results
         run: node scripts/verify-benchmark.mjs
+      - name: Reproduce saved policy sensitivity
+        run: npm run sensitivity:check
       - name: Restore verified judging presentation assets
         run: node scripts/restore-judging-assets.mjs
       - name: Prepare redistributable source
         run: python3 scripts/package-source.py
       - name: Type-check and build
         run: npm run build
+      - name: Install test Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify browser workflow, real task, offline reload and project path
+        run: |
+          mkdir -p artifacts
+          npm exec vite preview -- --host 127.0.0.1 --port 4173 > artifacts/preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          node scripts/wait-preview.mjs
+          RESOLVE_URL=http://127.0.0.1:4173/ node scripts/browser-verification.mjs
+          npm run build -- --base=/diastimed-resolve/
+          RESOLVE_URL=http://127.0.0.1:4173/diastimed-resolve/ RESOLVE_BROWSER_QUICK=1 RESOLVE_BROWSER_OUTPUT=artifacts/browser-project-path node scripts/browser-verification.mjs
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: resolve-build-and-evidence
           path: |
             dist/
+            artifacts/
             public/benchmark.json
+            public/sensitivity/
+            docs/SENSITIVITY.md
             public/DiastiMed_RESOLVE_source.zip
             docs/EVALUATION.md
           if-no-files-found: error

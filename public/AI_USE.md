@@ -19,3 +19,5 @@ Machine-readable code, data and presentation provenance is provided in public/de
 ## Human-participant usability aggregates
 
 The counts in docs/USABILITY.md were supplied by the team owner as human-participant testing results. SI helped format the report and calculate percentages; these counts were not generated as synthetic study data. Participant-level records and detailed error/change logs were not supplied for review. Synthetic in-app observations and deterministic software benchmarks remain separate.
+
+The v0.4 validation extension used ChatGPT/Codex assistance for shared policy configuration, stricter technical task checks, authored synthetic sensitivity fixtures and analyses, automated/browser verification scripts, primary-source comparison, blank review/usability protocols and forms, and the research-page summary. No clinician feedback, volunteers, quotations or outcomes were generated as human evidence. No runtime model, generative imagery or generated audio was added.

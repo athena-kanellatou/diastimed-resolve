@@ -80,3 +80,13 @@ Local verification: 23 tests passed, including offline cache/navigation doubles 
 ## Team-reported formative usability results · 15 November 2026
 
 The team supplied aggregate equipment-loss scenario results: initial 13/25 completions (52%); revised 12/15 (80%), comprising 8/9 returning and 4/6 new participants. These reports are distinct from scripted browser checks and the synthetic planner benchmark. Counts and percentages were checked arithmetically; participant-level records, assistance criteria, exact errors and revision details were not provided for review. The live research view, current status, review-protocol status, README and submission draft now reflect the report. Historical verification sections above retain their original scope. No clinical, astronaut or causal redesign validation is added. See USABILITY.md.
+
+## Policy v0.4 extension — local checks, 15 November 2026
+
+Work branch: validation/policy-sensitivity, based on main 39e4034. Local Node 24.22.1. 33 automated test functions pass, including 1,280 additional permutation-reference combinations in the policy test, technical task checks, timestamp ties and legacy loading. Root and /diastimed-resolve/ TypeScript/production builds pass. The original benchmark reproduces every saved case/result (169 RESOLVE, 169 greedy, 167 fixed). Sensitivity reproduces all saved artifact bytes: 39,750 planning cases plus 84 separate counterfactual task-gate fixtures; details/assertion totals are in SENSITIVITY.md.
+
+Nine presentation assets were restored and their pinned SHA-256 checks passed. No deck exporter or presentation redesign was performed. The released seven-slide deck remains the previously verified baseline; it does not claim new expert/V2 results.
+
+A local Chromium launch failed before opening the app because the environment disallowed its socket operation. The supported cloud browser then could not reach the local preview (connection refused). Neither is a passed browser check. A real-duration workflow script and a Node-22 GitHub CI browser step are prepared; actual remote results must be recorded separately. No physical hardware, full keyboard/screen-reader, real crew workload or clinical validation is claimed.
+
+Expert review: pending. Prospective V2 pilot/freeze/main sessions: pending. Synthetic examples and parameter grids are excluded from human findings.

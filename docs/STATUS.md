@@ -1,3 +1,11 @@
+# Current validation extension — policy v0.4 / schema 4
+
+The independent technical/preparation extension is documented in VALIDATION_PLAN.md, BASELINE_VALIDATION.md, POLICY_REGISTER.md and SENSITIVITY.md. Default numeric settings and all original benchmark cases/results remain unchanged. Exact branch/commit and actual checks are recorded in git and VERIFICATION.md. External reviewer feedback and prospective V2 participant rows remain **pending**. Prepared blank forms and authored synthetic packets do not count as human evidence.
+
+The status text below records the previous v0.3 baseline. Its test totals, schema and browser observations are historical, not verification of every v0.4 change.
+
+---
+
 # Prototype status · 15 November 2026 · policy v0.3
 
 ## Current delivery

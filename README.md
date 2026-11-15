@@ -26,7 +26,7 @@ OpenAI ChatGPT/Codex assisted with research, concept development, code, styling 
 
 ## Session accounting and exports
 
-Completed checks allocate their declared estimated duration; interrupted tasks allocate elapsed seconds. The planner uses the remaining session allowance. Export schema 3 records all planner inputs, catalogue/policy settings, quality amendments and successful-task response times, factual review summary and reviewer question. Original records are retained but browser-local data are not authenticated or tamper-proof. Existing reviews with compatible structure can be read; historical allocation is unknown and starts at zero.
+Completed checks allocate their declared estimated duration; interrupted tasks allocate elapsed seconds. The planner uses the remaining session allowance. Export schema 4 records all planner inputs, catalogue/policy settings, quality amendments and successful-task response times, factual review summary and reviewer question. Original records are retained but browser-local data are not authenticated or tamper-proof. Existing reviews with compatible structure can be read; historical allocation is unknown and starts at zero.
 
 ## Demo and independent reproduction
 
@@ -40,7 +40,7 @@ Project code is MIT licensed. See [LICENSE](LICENSE), [third-party notices](THIR
 
 [Seven-slide judging deck](https://athena-kanellatou.github.io/diastimed-resolve/judging.html) · [Submission draft](docs/SUBMISSION_DRAFT.md) · [Challenge fit](docs/CHALLENGE_FIT.md) · [Independent review protocols](docs/REVIEW_PROTOCOL.md).
 
-The v0.3 brief separates facts, limits and next steps. Storage failure remains visible. Reload recovery saves no task result. Neither the brief nor the browser task makes a clinical assessment. Full current verification and unresolved checks are in docs/VERIFICATION.md.
+The factual brief separates facts, limits and next steps. Storage failure remains visible. Reload recovery saves no task result. Neither the brief nor the browser task makes a clinical assessment. Full current verification and unresolved checks are in docs/VERIFICATION.md.
 
 ## Dashboard
 
@@ -55,3 +55,9 @@ The default opening is a globe-led mission presentation with three chapters (evi
 ## Formative usability evaluation
 
 Team-reported equipment-loss scenario completion was 13/25 (52%) before improvements and 12/15 (80%) after revisions. The revised round included nine returning participants (8 completions) and six new participants (4 completions). [Read the evaluation record](docs/USABILITY.md), including cohort differences, prior-exposure limitations and provenance. These results do not establish astronaut usability or clinical validity.
+
+## Validation extension
+
+[Baseline findings](docs/BASELINE_VALIDATION.md) · [Validation and human inputs](docs/VALIDATION_PLAN.md) · [Policy register](docs/POLICY_REGISTER.md) · [Reproducible sensitivity](docs/SENSITIVITY.md) · [Expert review pack](docs/DOMAIN_REVIEW_PACK.md) · [Prospective usability V2](docs/USABILITY_PROTOCOL_V2.md).
+
+`npm run sensitivity` generates the saved deterministic analysis; `npm run sensitivity:check` compares all saved bytes. The original 256-case benchmark remains separate. Expert review and prospective V2 participant testing are pending; blank forms and synthetic examples are provided without invented findings.

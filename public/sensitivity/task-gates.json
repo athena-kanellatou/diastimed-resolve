@@ -1,0 +1,758 @@
+[
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 10 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 10 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 10 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 10 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-10",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 20 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-20",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 9,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 9,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 10,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 10,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 19,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 19,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 20,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 20,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 23,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 23,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 29,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 29,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": false,
+    "reason": "A complete three-minute task with at least 30 valid responses is required."
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 30,
+    "missed": 0,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 0,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  },
+  {
+    "policy_id": "minimum-responses-30",
+    "response_count": 30,
+    "missed": 16,
+    "premature": 5,
+    "duration_seconds": 180,
+    "capture_accepted": true,
+    "reason": null
+  }
+]

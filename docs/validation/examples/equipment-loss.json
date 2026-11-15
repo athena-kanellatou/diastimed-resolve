@@ -1,0 +1,449 @@
+{
+  "exampleClassification": "Authored synthetic software fixture. Not a participant or clinician finding.",
+  "schemaVersion": 4,
+  "developmentProvenance": {
+    "tools": [
+      "OpenAI ChatGPT",
+      "OpenAI Codex"
+    ],
+    "code": "SI-assisted",
+    "syntheticScenarioData": "SI-assisted authored demonstration records; not astronaut or patient data",
+    "userEnteredObservations": "User-entered; not represented as SI-generated",
+    "runtimeModelUsed": false,
+    "disclosure": "https://github.com/athena-kanellatou/diastimed-resolve/blob/main/AI_USE.md"
+  },
+  "project": "DiastiMed RESOLVE",
+  "policy": "resolve-evidence-v0.4",
+  "exportedAt": "2026-11-15T12:00:00.000Z",
+  "scenarioClock": "2026-11-15T12:00:00.000Z",
+  "reviewQuestion": "",
+  "reviewSummary": {
+    "status": "incomplete",
+    "facts": [
+      {
+        "metric": "sleep",
+        "label": "Sleep",
+        "value": 5.2,
+        "unit": "hours",
+        "at": "2026-11-15T12:00:00.000Z",
+        "source": "synthetic"
+      },
+      {
+        "metric": "fatigue",
+        "label": "Fatigue",
+        "value": 7,
+        "unit": "/10",
+        "at": "2026-11-15T12:00:00.000Z",
+        "source": "synthetic"
+      },
+      {
+        "metric": "context",
+        "label": "Context",
+        "value": "Synthetic routine shift; no interruptions.",
+        "unit": "note",
+        "at": "2026-11-15T12:00:00.000Z",
+        "source": "synthetic"
+      }
+    ],
+    "limits": [
+      "No usable objective task observation is available; the self-reports alone cannot establish alertness.",
+      "No personal baseline or validated health thresholds are applied. Device/input latency and self-report recall limit interpretation."
+    ],
+    "next": "Keep this review open as incomplete. Record the unresolved requirements for the human reviewer; restore suitable equipment or revise the routine allowance before attempting the missing checks.",
+    "missing": [
+      "Vigilance"
+    ],
+    "sourceIds": [
+      "sleep",
+      "reaction",
+      "exmc"
+    ]
+  },
+  "classification": "Research prototype; evidence completeness is not medical clearance.",
+  "assumptions": {
+    "freshnessHours": {
+      "sleep": 24,
+      "fatigue": 6,
+      "context": 6,
+      "vigilance": 4
+    },
+    "costs": "Estimated action allocations, not observed crew performance. Completed checks consume their declared cost; interrupted tasks consume elapsed seconds.",
+    "taskQuality": "At least 180 seconds and 20 valid responses; unvalidated engineering rule."
+  },
+  "policySnapshot": {
+    "version": "resolve-evidence-v0.4",
+    "classification": "Unvalidated engineering assumptions; collection completeness is not medical clearance.",
+    "requirements": [
+      {
+        "id": "sleep",
+        "label": "Recent sleep record",
+        "short": "Sleep",
+        "maxAgeHours": 24,
+        "method": "self-report-v1",
+        "unit": "hours",
+        "sourceIds": [
+          "sleep",
+          "standard"
+        ]
+      },
+      {
+        "id": "fatigue",
+        "label": "Current fatigue report",
+        "short": "Fatigue",
+        "maxAgeHours": 6,
+        "method": "self-report-v1",
+        "unit": "/10",
+        "sourceIds": [
+          "sleep",
+          "reaction"
+        ]
+      },
+      {
+        "id": "context",
+        "label": "Workload & measurement context",
+        "short": "Context",
+        "maxAgeHours": 6,
+        "method": "self-report-v1",
+        "unit": "note",
+        "sourceIds": [
+          "standard"
+        ]
+      },
+      {
+        "id": "vigilance",
+        "label": "Vigilance task observation",
+        "short": "Vigilance",
+        "maxAgeHours": 4,
+        "method": "pvt-inspired-v1",
+        "unit": "ms",
+        "sourceIds": [
+          "reaction",
+          "pvt"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "id": "check-in",
+        "title": "Complete a guided check-in",
+        "supplies": [
+          "sleep",
+          "fatigue",
+          "context"
+        ],
+        "seconds": 70,
+        "prerequisites": [],
+        "why": "Collect the three missing self-report fields together, with a timestamp and clear scale anchors.",
+        "sourceIds": [
+          "sleep",
+          "standard"
+        ]
+      },
+      {
+        "id": "sleep-report",
+        "title": "Record recent sleep",
+        "supplies": [
+          "sleep"
+        ],
+        "seconds": 35,
+        "prerequisites": [],
+        "why": "Refresh the sleep record without repeating other usable observations.",
+        "sourceIds": [
+          "sleep"
+        ]
+      },
+      {
+        "id": "fatigue-report",
+        "title": "Record current fatigue",
+        "supplies": [
+          "fatigue"
+        ],
+        "seconds": 30,
+        "prerequisites": [],
+        "why": "Add a current self-report. This custom 0–10 scale is descriptive, not a validated instrument.",
+        "sourceIds": [
+          "reaction"
+        ]
+      },
+      {
+        "id": "context-report",
+        "title": "Record workload & context",
+        "supplies": [
+          "context"
+        ],
+        "seconds": 25,
+        "prerequisites": [],
+        "why": "Keep work demands and measurement circumstances alongside the observations.",
+        "sourceIds": [
+          "standard"
+        ]
+      },
+      {
+        "id": "workstation-task",
+        "title": "Run the workstation vigilance task",
+        "supplies": [
+          "vigilance"
+        ],
+        "seconds": 180,
+        "capability": "workstation",
+        "prerequisites": [
+          "context"
+        ],
+        "why": "Collect an objective task observation after recording its context. Requires an uninterrupted three-minute session.",
+        "sourceIds": [
+          "reaction",
+          "pvt"
+        ]
+      },
+      {
+        "id": "tablet-task",
+        "title": "Run the tablet vigilance task",
+        "supplies": [
+          "vigilance"
+        ],
+        "seconds": 195,
+        "capability": "tablet",
+        "prerequisites": [
+          "context"
+        ],
+        "why": "Use the available tablet when the workstation is unavailable. Device differences limit direct comparison.",
+        "sourceIds": [
+          "reaction",
+          "pvt"
+        ]
+      }
+    ],
+    "task": {
+      "durationSeconds": 180,
+      "minimumResponses": 20,
+      "cueTimeoutMs": 4000,
+      "cueDelayMinMs": 1000,
+      "cueDelayMaxMs": 4000,
+      "pollIntervalMs": 25,
+      "summary": "rounded-median",
+      "hiddenTab": "interrupt",
+      "heldSpace": "ignore-repeat",
+      "performanceInterpretation": "none"
+    },
+    "evidenceRules": {
+      "cutoff": "inclusive",
+      "quality": "usable-with-last-appended-amendment",
+      "selection": "newest-accepted-later-append-on-tie",
+      "userTask": "metadata-required",
+      "taskTimestamp": "earlier-of-recorded-and-completed",
+      "valueRules": {
+        "sleep": [
+          0,
+          24
+        ],
+        "fatigue": [
+          0,
+          10
+        ],
+        "context": "trimmed-nonempty",
+        "vigilance": "finite-positive"
+      }
+    },
+    "completeness": "all-four-fields",
+    "partialObjective": "maximum-covered-then-minimum-seconds"
+  },
+  "session": {
+    "budgetSeconds": 360,
+    "spentSeconds": 0,
+    "remainingSeconds": 360,
+    "urgent": false,
+    "pendingTask": null
+  },
+  "observations": [
+    {
+      "id": "fixture-sleep",
+      "metric": "sleep",
+      "value": 5.2,
+      "unit": "hours",
+      "method": "self-report-v1",
+      "recordedAt": "2026-11-15T12:00:00.000Z",
+      "quality": "usable",
+      "source": "synthetic"
+    },
+    {
+      "id": "fixture-fatigue",
+      "metric": "fatigue",
+      "value": 7,
+      "unit": "/10",
+      "method": "self-report-v1",
+      "recordedAt": "2026-11-15T12:00:00.000Z",
+      "quality": "usable",
+      "source": "synthetic"
+    },
+    {
+      "id": "fixture-context",
+      "metric": "context",
+      "value": "Synthetic routine shift; no interruptions.",
+      "unit": "note",
+      "method": "self-report-v1",
+      "recordedAt": "2026-11-15T12:00:00.000Z",
+      "quality": "usable",
+      "source": "synthetic"
+    }
+  ],
+  "qualityDecisions": [],
+  "evidence": [
+    {
+      "requirement": {
+        "id": "sleep",
+        "label": "Recent sleep record",
+        "short": "Sleep",
+        "maxAgeHours": 24,
+        "method": "self-report-v1",
+        "unit": "hours",
+        "sourceIds": [
+          "sleep",
+          "standard"
+        ]
+      },
+      "observation": {
+        "id": "fixture-sleep",
+        "metric": "sleep",
+        "value": 5.2,
+        "unit": "hours",
+        "method": "self-report-v1",
+        "recordedAt": "2026-11-15T12:00:00.000Z",
+        "quality": "usable",
+        "source": "synthetic"
+      },
+      "accepted": true,
+      "reason": "Usable within the assumed 24-hour window"
+    },
+    {
+      "requirement": {
+        "id": "fatigue",
+        "label": "Current fatigue report",
+        "short": "Fatigue",
+        "maxAgeHours": 6,
+        "method": "self-report-v1",
+        "unit": "/10",
+        "sourceIds": [
+          "sleep",
+          "reaction"
+        ]
+      },
+      "observation": {
+        "id": "fixture-fatigue",
+        "metric": "fatigue",
+        "value": 7,
+        "unit": "/10",
+        "method": "self-report-v1",
+        "recordedAt": "2026-11-15T12:00:00.000Z",
+        "quality": "usable",
+        "source": "synthetic"
+      },
+      "accepted": true,
+      "reason": "Usable within the assumed 6-hour window"
+    },
+    {
+      "requirement": {
+        "id": "context",
+        "label": "Workload & measurement context",
+        "short": "Context",
+        "maxAgeHours": 6,
+        "method": "self-report-v1",
+        "unit": "note",
+        "sourceIds": [
+          "standard"
+        ]
+      },
+      "observation": {
+        "id": "fixture-context",
+        "metric": "context",
+        "value": "Synthetic routine shift; no interruptions.",
+        "unit": "note",
+        "method": "self-report-v1",
+        "recordedAt": "2026-11-15T12:00:00.000Z",
+        "quality": "usable",
+        "source": "synthetic"
+      },
+      "accepted": true,
+      "reason": "Usable within the assumed 6-hour window"
+    },
+    {
+      "requirement": {
+        "id": "vigilance",
+        "label": "Vigilance task observation",
+        "short": "Vigilance",
+        "maxAgeHours": 4,
+        "method": "pvt-inspired-v1",
+        "unit": "ms",
+        "sourceIds": [
+          "reaction",
+          "pvt"
+        ]
+      },
+      "observation": null,
+      "accepted": false,
+      "reason": "No observation recorded"
+    }
+  ],
+  "plan": {
+    "status": "incomplete",
+    "actions": [],
+    "seconds": 0,
+    "missing": [
+      "vigilance"
+    ],
+    "unresolved": [
+      "vigilance"
+    ],
+    "reused": [
+      "sleep",
+      "fatigue",
+      "context"
+    ]
+  },
+  "resources": {
+    "workstation": false,
+    "tablet": false
+  },
+  "events": [],
+  "sources": [
+    {
+      "id": "sleep",
+      "name": "Sleep & irregular schedules",
+      "org": "NASA Human Research Program",
+      "url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "supports": "Sleep disruption and workload matter during spaceflight.",
+      "limit": "Does not establish our freshness windows or diagnose fatigue."
+    },
+    {
+      "id": "standard",
+      "name": "Spaceflight Standard Measures",
+      "org": "NASA",
+      "url": "https://www.nasa.gov/reference/standard-measures/",
+      "supports": "Combining physiological, psychological and contextual observations.",
+      "limit": "Does not validate our evidence-completeness policy."
+    },
+    {
+      "id": "reaction",
+      "name": "Reaction Self Test on ISS",
+      "org": "NASA Technical Reports Server",
+      "url": "https://ntrs.nasa.gov/citations/20090029851",
+      "supports": "Brief objective observations of alertness with low crew burden.",
+      "limit": "Does not validate this browser task or establish fitness for duty."
+    },
+    {
+      "id": "pvt",
+      "name": "Brief vigilance task research",
+      "org": "Basner, Mollicone & Dinges · 2011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22025811/",
+      "supports": "A published three-minute vigilance paradigm studied under sleep loss.",
+      "limit": "Our task is PVT-inspired and has not been clinically or device validated."
+    },
+    {
+      "id": "exmc",
+      "name": "Exploration medical architecture",
+      "org": "NASA · ExMC",
+      "url": "https://ntrs.nasa.gov/citations/20220017869",
+      "supports": "Earth-independent medical support under resource and communication constraints.",
+      "limit": "Does not establish medical optimality of our planner."
+    }
+  ]
+}
