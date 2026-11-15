@@ -53,3 +53,13 @@ The results document formative testing and iteration. They do not establish astr
 ## Suggested submission wording
 
 We evaluated the equipment-loss scenario through two rounds of usability testing. Initially, 13 of 25 participants completed the scenario (52%). Observed difficulties informed revisions, which were subsequently tested by nine returning participants and six new participants. Twelve of these 15 participants completed the revised scenario (80%): eight returning participants and four new participants. The follow-up groups were small, and returning participants' familiarity limits conclusions about the size of the redesign's effect.
+
+## Prospective V2 is separate
+
+USABILITY_PROTOCOL_V2.md is prepared for pilot and prospective freeze. USABILITY_RESULTS_V2.md records no documented sessions under the prospective protocol. No participant-level V2 observations have been supplied, and none of the historical counts above is reassigned to its tasks or independence definition.
+
+## Additional participation reported — outcomes not established
+
+The team owner additionally reports testing with 30 LinkedIn-recruited volunteers: 18 first-time and 12 returning. Baseline commit `39e4034d1ed40bb9b385c1eee82359c6e2215078` was identified in the account; the deployment timestamp does not establish when participants tested. Available materials do not establish actual task-level outcomes, assistance, session times, failure frequencies or adherence to the prospective V2 protocol. No completion rate is calculated for this additional reported round. Illustrative participant examples are excluded from human findings.
+
+These 30 reported participants are not added to historical rates, and no cross-round distinct-person total is inferred. See AVAILABLE_EVIDENCE.md for the release inventory and limits. A lack of further records is represented as missing information, not reconstructed observations.

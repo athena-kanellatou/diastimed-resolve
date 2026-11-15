@@ -80,3 +80,25 @@ Local verification: 23 tests passed, including offline cache/navigation doubles 
 ## Team-reported formative usability results · 15 November 2026
 
 The team supplied aggregate equipment-loss scenario results: initial 13/25 completions (52%); revised 12/15 (80%), comprising 8/9 returning and 4/6 new participants. These reports are distinct from scripted browser checks and the synthetic planner benchmark. Counts and percentages were checked arithmetically; participant-level records, assistance criteria, exact errors and revision details were not provided for review. The live research view, current status, review-protocol status, README and submission draft now reflect the report. Historical verification sections above retain their original scope. No clinical, astronaut or causal redesign validation is added. See USABILITY.md.
+
+## Policy v0.4 extension — local checks, 15 November 2026
+
+Work branch: validation/policy-sensitivity, based on main 39e4034. Local Node 24.22.1. 33 automated test functions pass, including 1,280 additional permutation-reference combinations in the policy test, technical task checks, timestamp ties and legacy loading. Root and /diastimed-resolve/ TypeScript/production builds pass. The original benchmark reproduces every saved case/result (169 RESOLVE, 169 greedy, 167 fixed). Sensitivity reproduces all saved artifact bytes: 39,750 planning cases plus 84 separate counterfactual task-gate fixtures; details/assertion totals are in SENSITIVITY.md.
+
+Nine presentation assets were restored and their pinned SHA-256 checks passed. No deck exporter or presentation redesign was performed. The released seven-slide deck remains the previously verified baseline; it does not claim new expert/V2 results.
+
+A local Chromium launch failed before opening the app because the environment disallowed its socket operation. The supported cloud browser then could not reach the local preview (connection refused). Neither is a passed browser check. A real-duration workflow script and a Node-22 GitHub CI browser step are prepared; actual remote results must be recorded separately. No physical hardware, full keyboard/screen-reader, real crew workload or clinical validation is claimed.
+
+Expert review: pending. Prospective V2 pilot/freeze/main sessions: pending. Synthetic examples and parameter grids are excluded from human findings.
+
+### First remote extension run
+
+[Run 43744653051](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43744653051), commit ec026d8, Node 22.23.4 / Chromium headless shell 151: unit tests, original benchmark comparison, sensitivity reproduction, pinned presentation restoration, source packaging and build passed. The **root-hosted** browser workflow passed context/allocation, tablet overhead, both-device gap, schema-4 manual export, sensitivity UI, limited modal focus/Escape, genuine reload recovery, an actual 180-second scripted task, task limitations, cached offline reload/workflow, and no document overflow at 390/768/1440 CSS pixels. No uncaught browser errors were observed. This is software verification using synthetic observations, not human testing.
+
+Hidden-document interruption was unavailable: headless Chromium reported the original document still visible after opening another tab. The script did not synthesize a visibility event or claim a pass. The first project-path run failed before loading the workspace; the runner was reusing its root-configured preview process after rebuilding. The revised runner starts a dedicated preview with the project base on a separate port and retains artifacts even on failure. A final successful run is required before claiming that project-path browser workflow passed.
+
+### Successful corrected remote run
+
+[Run 43745298382](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43745298382), code commit `3c03eba0525914426c6ce7fbbff2435b3203dc9d`, completed successfully on Node 22.23.4 with Chromium 151.0.7922.34. All 33 tests, benchmark comparison, sensitivity byte reproduction, restoration, source packaging and both builds passed. The root browser task used 180.03 wall-clock seconds and recorded 70 scripted responses, zero misses, zero early responses and a 130ms median. Those values describe automation, not human performance or timing calibration. Root and dedicated project-base previews passed workflow/export, cached offline reload/context/device changes and 390/768/1440 CSS-pixel overflow checks with no uncaught browser errors. The real-duration task ran on the root preview; the quick project-path run did not repeat it. Genuine hidden-tab interruption was unavailable and remains unverified.
+
+The final available human evidence and release limits are recorded in AVAILABLE_EVIDENCE.md. Current release commits and deployments have their own checks; no participant results or domain review were created by software verification.

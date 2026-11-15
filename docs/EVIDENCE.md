@@ -1,4 +1,4 @@
-# Evidence ledger — prototype v0.2
+# Evidence ledger — provisional policy
 
 NASA HRP sleep-risk material supports recording sleep and work context. NASA Standard Measures supports viewing subjective and objective observations together. NASA Reaction Self Test research motivates a short vigilance observation. Basner et al. 2011 studied a three-minute PVT-B. None validates this app, its browser timing or its planning policy.
 
@@ -20,7 +20,7 @@ Browser-task quality rule: require at least 20 captured responses over the full 
 
 Design rationale checked against NASA HRP sleep-risk material and NTRS records 20090029851 and 20220017869 on 14 November 2026. NASA identifies minimal measurement burden and limited crew time/communication as needs; the implemented collection pathway is our own provisional design. No astronaut co-design has been performed.
 
-Session budget now accounts for declared completed-check allocations and elapsed interrupted-task time. This accounting is an engineering policy. Quality amendments preserve original observations, and export schema 2 includes a policy snapshot and successful-task response arrays.
+Session budget now accounts for declared completed-check allocations and elapsed interrupted-task time. This accounting is an engineering policy. Quality amendments preserve original observations, and The historical schema-2 export included a policy snapshot and successful-task response arrays.
 
 ## Claim to source to implementation mapping · v0.3
 
@@ -43,3 +43,7 @@ All rows below are provisional design mapping unless marked published finding or
 | S04 | Greedy ties RESOLVE on all 169 comparable complete cases | public/benchmark.json, scripts/benchmark.ts | Finite synthetic model only | EVALUATION.md | Reproducible software result |
 
 Review status: no independent domain approval for A01–A04 or the handoff wording. No personal baseline, clinically validated fatigue scale, astronaut data or operational health inference is present. Browser storage is editable.
+
+## v0.4 policy and review preparation
+
+Current shared settings and unsupported assumptions are registered in POLICY_REGISTER.md. PRIMARY_SOURCE_REVIEW.md records the inspected full-paper methods and important differences from the browser task. Schema 4 includes exact task settings; stored user task observations receive the same metadata/median gate as new saves. Numerical defaults remain unchanged. SENSITIVITY.md reports software parameter dependence only. Expert review and fresh-participant V2 testing remain pending.

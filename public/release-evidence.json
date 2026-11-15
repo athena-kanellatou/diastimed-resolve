@@ -1,0 +1,21 @@
+{
+  "policy": "resolve-evidence-v0.4",
+  "exportSchema": 4,
+  "evidenceInventory": "https://github.com/athena-kanellatou/diastimed-resolve/blob/main/docs/AVAILABLE_EVIDENCE.md",
+  "verifiedCodeReference": "3c03eba0525914426c6ce7fbbff2435b3203dc9d",
+  "verifiedRun": "https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43745298382",
+  "automatedTests": 33,
+  "syntheticPlanningCases": 39750,
+  "separateSyntheticGateCases": 84,
+  "additionalParticipation": {
+    "source": "team-owner report",
+    "reportedTesters": 30,
+    "firstTime": 18,
+    "returning": 12,
+    "outcomes": "not established from available session records",
+    "completionRate": null
+  },
+  "expertReview": "pending",
+  "clinicalValidation": false,
+  "judgingPresentation": "seven-slide baseline snapshot; no new human outcomes added"
+}

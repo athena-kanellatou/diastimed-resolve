@@ -14,6 +14,7 @@ export default function UsabilitySummary(){
   </div>
   <div className="usability-table-wrap"><table className="policy-table"><caption>Revised-version results by participant experience</caption><thead><tr><th scope="col">Participant group</th><th scope="col">Completed / tested</th><th scope="col">Completion</th></tr></thead><tbody>{revised.map(group=><tr key={group.label}><th scope="row">{group.label}</th><td>{group.completed} / {group.tested}</td><td>{percent(group.completed,group.tested)}</td></tr>)}</tbody></table></div>
   <p className="usability-limits">The rounds differ by 28 percentage points. Nine returning participants had prior exposure; six were new. Small groups and familiarity limit conclusions about the redesign's effect. These aggregate results were supplied by the team; participant-level records and assistance criteria were not available for review.</p>
+  <p className="usability-limits">The team additionally reports testing with 30 LinkedIn-recruited volunteers: 18 first-time and 12 returning. Completion and assistance outcomes for that reported round are not established in the available records; those participants are not included in the rates above.</p>
   <a className="text-button" href="https://github.com/athena-kanellatou/diastimed-resolve/blob/main/docs/USABILITY.md" target="_blank" rel="noreferrer">Read the evaluation record ↗</a>
  </section>;
 }

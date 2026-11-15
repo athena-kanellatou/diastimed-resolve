@@ -1,3 +1,17 @@
+# Current release — policy v0.4 / schema 4
+
+The working prototype includes shared policy configuration, canonical collection guards, consistent task metadata/median checks, reliable newest-valid evidence selection and complete policy exports. Numeric policy defaults and every original benchmark case/result remain unchanged.
+
+33 automated test functions and the reproducible analysis of 39,750 planning cases plus 84 separate gate fixtures passed in [run 43745298382](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43745298382) for code revision 3c03eba. The actual 180-second scripted task, schema-4 export, real reload recovery, cached offline workflow and root/project-path browser checks passed. See VERIFICATION.md for exact scope and limits. Subsequent release commits have their own GitHub checks.
+
+AVAILABLE_EVIDENCE.md records the complete available evidence for this release. Historical team-reported usability aggregates are retained with their limitations. An additional 30-person round is reported by the owner (18 first-time, 12 returning); its completion/assistance outcomes are not established by traceable session records. No rate or participant-driven change is claimed for that round. Expert review and documented prospective V2 evaluation remain pending.
+
+The source package includes the policy register, primary-source mapping, sensitivity inputs/results, expert-review pack and blank prospective forms. Fictional software records and illustrative participant scenarios are excluded from human findings. Physical-device timing, full accessibility and genuine hidden-tab interruption remain unverified.
+
+The text below records historical v0.3 delivery and verification, not the complete current status.
+
+---
+
 # Prototype status · 15 November 2026 · policy v0.3
 
 ## Current delivery

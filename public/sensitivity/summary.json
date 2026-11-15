@@ -1,0 +1,650 @@
+{
+  "fixtureVersion": "resolve-sensitivity-fixtures-v1",
+  "baselinePolicy": "resolve-evidence-v0.4",
+  "cases": 39750,
+  "families": {
+    "freshness": 15552,
+    "cost": 24192,
+    "urgent": 6
+  },
+  "baselineCases": 3458,
+  "acceptanceFlips": 12960,
+  "nextActionChanges": 6704,
+  "feasibilityTransitions": 2405,
+  "declaredCostChanges": 11854,
+  "comparisonDenominator": 39750,
+  "checks": {
+    "permutationReference": 39750,
+    "uniqueReferenceStates": 20164,
+    "packetReplay": 88,
+    "boundaryAndInvalidData": 6804,
+    "monotonicity": 48754,
+    "taskGateCases": 84
+  },
+  "rawSha256": "fcea6f6c1212fb61e10a5c65449e52ebb1d422d50bcd20f6b81dc87002d5edfb",
+  "byPolicy": {
+    "freshness-12-3-3-2": {
+      "cases": 194,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-3-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 16,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-3-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 46,
+      "declaredCostChanges": 66
+    },
+    "freshness-12-3-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-3-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 16,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-3-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 46,
+      "declaredCostChanges": 66
+    },
+    "freshness-12-3-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-3-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 16,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-3-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 46,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-6-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-6-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 8,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-6-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 38,
+      "declaredCostChanges": 66
+    },
+    "freshness-12-6-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-6-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 48,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 48
+    },
+    "freshness-12-6-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 66
+    },
+    "freshness-12-6-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-6-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-6-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-12-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 8,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 50,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 108
+    },
+    "freshness-12-12-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 120,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-12-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 120,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 120
+    },
+    "freshness-12-12-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 264,
+      "nextActionChanges": 120,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 120
+    },
+    "freshness-24-3-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-3-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 8,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-3-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 38,
+      "declaredCostChanges": 66
+    },
+    "freshness-24-3-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-3-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 48,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-3-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 66
+    },
+    "freshness-24-3-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 120
+    },
+    "freshness-24-3-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 120
+    },
+    "freshness-24-3-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 120
+    },
+    "freshness-24-6-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 96,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 32,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-6-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 48,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 48
+    },
+    "freshness-24-6-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 66
+    },
+    "freshness-24-6-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 48,
+      "nextActionChanges": 22,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 22
+    },
+    "freshness-24-6-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 0,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 0
+    },
+    "freshness-24-6-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 72,
+      "nextActionChanges": 0,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 18
+    },
+    "freshness-24-6-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 82,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 94
+    },
+    "freshness-24-6-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 72,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 72
+    },
+    "freshness-24-6-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 30,
+      "declaredCostChanges": 72
+    },
+    "freshness-24-12-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 32,
+      "declaredCostChanges": 108
+    },
+    "freshness-24-12-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 108
+    },
+    "freshness-24-12-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 108
+    },
+    "freshness-24-12-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 82,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 82
+    },
+    "freshness-24-12-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 72,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 60
+    },
+    "freshness-24-12-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 60
+    },
+    "freshness-24-12-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 94,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 94
+    },
+    "freshness-24-12-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 72,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 72
+    },
+    "freshness-24-12-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 72,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 72
+    },
+    "freshness-36-3-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 8,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 50,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-3-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 36,
+      "declaredCostChanges": 120
+    },
+    "freshness-36-3-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 120
+    },
+    "freshness-36-3-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 264,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 120
+    },
+    "freshness-36-6-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 168,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 32,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-6-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 96,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-6-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 96
+    },
+    "freshness-36-6-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 120,
+      "nextActionChanges": 70,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 70
+    },
+    "freshness-36-6-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 72,
+      "nextActionChanges": 48,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 48
+    },
+    "freshness-36-6-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 42,
+      "declaredCostChanges": 48
+    },
+    "freshness-36-6-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 82,
+      "feasibilityTransitions": 26,
+      "declaredCostChanges": 94
+    },
+    "freshness-36-6-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 72
+    },
+    "freshness-36-6-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 72
+    },
+    "freshness-36-12-3-2": {
+      "cases": 192,
+      "acceptanceFlips": 240,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 38,
+      "declaredCostChanges": 108
+    },
+    "freshness-36-12-3-4": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 6,
+      "declaredCostChanges": 108
+    },
+    "freshness-36-12-3-8": {
+      "cases": 192,
+      "acceptanceFlips": 264,
+      "nextActionChanges": 108,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 108
+    },
+    "freshness-36-12-6-2": {
+      "cases": 192,
+      "acceptanceFlips": 192,
+      "nextActionChanges": 82,
+      "feasibilityTransitions": 32,
+      "declaredCostChanges": 82
+    },
+    "freshness-36-12-6-4": {
+      "cases": 192,
+      "acceptanceFlips": 144,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 6,
+      "declaredCostChanges": 60
+    },
+    "freshness-36-12-6-8": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 60,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 60
+    },
+    "freshness-36-12-12-2": {
+      "cases": 192,
+      "acceptanceFlips": 264,
+      "nextActionChanges": 94,
+      "feasibilityTransitions": 41,
+      "declaredCostChanges": 94
+    },
+    "freshness-36-12-12-4": {
+      "cases": 192,
+      "acceptanceFlips": 216,
+      "nextActionChanges": 72,
+      "feasibilityTransitions": 15,
+      "declaredCostChanges": 72
+    },
+    "freshness-36-12-12-8": {
+      "cases": 192,
+      "acceptanceFlips": 288,
+      "nextActionChanges": 72,
+      "feasibilityTransitions": 54,
+      "declaredCostChanges": 72
+    },
+    "resolve-evidence-v0.4": {
+      "cases": 3458,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 0,
+      "feasibilityTransitions": 0,
+      "declaredCostChanges": 0
+    },
+    "cost-no-bundle-discount": {
+      "cases": 3458,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 8,
+      "feasibilityTransitions": 11,
+      "declaredCostChanges": 272
+    },
+    "cost-self-report-80pct": {
+      "cases": 3456,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 149,
+      "feasibilityTransitions": 81,
+      "declaredCostChanges": 2392
+    },
+    "cost-self-report-120pct": {
+      "cases": 3456,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 143,
+      "feasibilityTransitions": 74,
+      "declaredCostChanges": 2320
+    },
+    "tablet-overhead-0": {
+      "cases": 3456,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 33,
+      "feasibilityTransitions": 19,
+      "declaredCostChanges": 84
+    },
+    "tablet-overhead-30": {
+      "cases": 3456,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 10,
+      "feasibilityTransitions": 17,
+      "declaredCostChanges": 65
+    },
+    "tablet-overhead-60": {
+      "cases": 3456,
+      "acceptanceFlips": 0,
+      "nextActionChanges": 17,
+      "feasibilityTransitions": 39,
+      "declaredCostChanges": 65
+    }
+  },
+  "limitations": [
+    "Authored scenarios and equal-weight grids are not population frequencies.",
+    "Acceptance flip count counts fields, not cases.",
+    "Delta costs can reflect different coverage; they are not measured savings.",
+    "Comparators and oracle share evidence assessment; boundary tests check it separately.",
+    "No altered cue schedule replay, clinical threshold selection, or human evidence."
+  ]
+}

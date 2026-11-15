@@ -2,3 +2,5 @@ node_modules/
 .sites-local/
 *.log
 artifacts/
+
+dist/
