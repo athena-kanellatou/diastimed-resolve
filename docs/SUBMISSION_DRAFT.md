@@ -3,6 +3,10 @@
 ## Project title
 DiastiMed RESOLVE
 
+## Short project summary
+
+RESOLVE helps assemble a fatigue-and-alertness review when equipment or session time is limited. It retains usable sleep, fatigue and workload observations, identifies missing evidence, and selects a feasible collection pathway. When a workstation becomes unavailable, it can offer a tablet alternative; when neither device is available, vigilance remains explicitly unresolved. A human-review brief and JSON export preserve observations, limitations, decisions and policy settings. NASA research on sleep, brief vigilance observations and exploration medical support informed the design. The working browser prototype includes an experimental three-minute task, local saving, interruption recovery and reproducible software checks. Freshness windows, task-quality rules and action allocations remain engineering assumptions. RESOLVE does not diagnose, determine fitness for duty or automatically transmit records to a clinician.
+
 ## Project Details — ready to paste
 
 A crew member begins a fatigue-and-alertness review. The workstation becomes unavailable halfway through. Which observations can still be collected, and what does the next human reviewer need to know?
@@ -17,13 +21,13 @@ The human-review handoff includes recorded observations, timestamps, measurement
 
 The creative contribution is connecting resource-aware planning with evidence traceability. Every change in equipment, evidence quality or available time has a visible consequence. The intended benefit is less repeated collection and a clearer handoff when reviews are interrupted.
 
-We evaluated the equipment-loss scenario through two rounds of usability testing. Initially, 13 of 25 participants completed it (52%). After revisions, 12 of 15 completed it (80%): eight of nine returning participants and four of six new participants. The follow-up groups were small, and returning participants' familiarity limits conclusions about the size of the redesign's effect.
+We evaluated the equipment-loss scenario through two rounds of usability testing. Initially, 13 of 25 participants completed it (52%). After revisions, 12 of 15 completed it (80%): eight of nine returning participants and four of six new participants. These historical counts were reported by the team; participant-level records were not independently reviewed. The follow-up groups were small, and returning participants' familiarity limits conclusions about the size of the redesign's effect.
 
 NASA resources on sleep and irregular schedules, ISS psychomotor vigilance testing, Standard Measures and exploration medical decision-support architecture informed the problem framing. Design considerations included crew workload, equipment and communication constraints, interruptions and human oversight.
 
 RESOLVE uses TypeScript, React, Vite, HTML/CSS, Lucide icons and a Canvas Earth visualisation with credited NASA imagery. It runs in a standard browser, saves review progress locally and requires no specialised hardware. GitHub provides public source and automated verification; GitHub Pages hosts the application.
 
-Software verification includes 23 automated tests and comparison with an independent reference across 256 synthetic planning combinations. Collection thresholds, action costs and task-quality rules remain provisional. Astronaut usability, clinical validity and measured crew-time benefits have not been established; collection completeness does not represent medical clearance.
+Software verification includes 33 automated tests, preservation of the original 256-case benchmark and reproducible sensitivity analysis of 39,750 synthetic planning cases plus 84 separate task-gate fixtures. An independent permutation reference checks achievable coverage and declared cost in the sensitivity grid. Collection thresholds, action costs and task-quality rules remain provisional. Astronaut usability, clinical validity and measured crew-time benefits have not been established; collection completeness does not represent medical clearance.
 
 ChatGPT and Codex assisted code, documentation, testing and synthetic demonstration content, with disclosures included in the project. No language model runs inside RESOLVE. In-app demonstration scenarios are synthetic; the usability aggregates above were reported by our team from participant testing.
 
@@ -32,6 +36,10 @@ NASA HRP sleep-risk material motivates the sleep/context inputs. The Reaction Se
 
 ## Results and limits
 256 synthetic cases: RESOLVE 169 feasible complete plans, greedy 169, fixed 167. RESOLVE and greedy tie on all 169 paired-complete costs. Against fixed order: 15 lower-cost, 152 ties, zero higher-cost paired cases. Median assumed saving zero seconds. These are software checks under an illustrative cost model, not patients or measured crew time. No astronaut co-design or clinical review. Team-reported formative usability results: 13/25 initial completions and 12/15 revised completions, including 8/9 returning and 4/6 new participants. Counts, provenance and interpretation limits are in USABILITY.md.
+
+## Current release evidence
+
+Policy v0.4 / export schema 4. The team reports additional participation by 30 volunteers (18 first-time, 12 returning), but the available records do not establish completion or assistance outcomes for that additional round. No additional human completion rate is claimed. Expert review and documented prospective V2 evaluation remain pending. See AVAILABLE_EVIDENCE.md. The seven-slide PDF/PPTX/images remain a labelled baseline snapshot; the app and current documentation contain the expanded technical verification and sensitivity analysis.
 
 ## AI use
 ChatGPT/Codex assisted research, concept development, implementation, synthetic scenarios, design, documentation, test design and judging materials. No model operates in the application. Clinical review demonstrations use synthetic observations; the usability panel displays team-reported human-participant aggregates. No NASA endorsement or clinical approval is implied. Full disclosure: AI_USE.md.

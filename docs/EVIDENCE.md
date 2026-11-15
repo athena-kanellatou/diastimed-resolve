@@ -39,7 +39,7 @@ All rows below are provisional design mapping unless marked published finding or
 | A04 | Four accepted fields satisfy collection requirements | Authored demonstration policy | Evidence completeness, never health clearance | plan.status complete, brief | Assumption |
 | S01 | Execution blocks unavailable devices, missing prerequisites and exhausted allowance | Domain test cases, current source | Software behaviour within finite policy, not clinical validation | eligibility, recordCheck | Automated checks |
 | S02 | Reload interruption retains no result and accounts for elapsed seconds once | recovery.test.ts and browser walkthrough record | Software recovery with capped wall-clock allocation; clock/device limits remain | recoverInterrupted, storage.ts | Automated checks; see VERIFICATION.md for UI status |
-| S03 | Handoff separates observations, limits and next review step | Authored text, source roles E01–E04 | Factual review aid with no normal ranges, diagnosis or treatment | reviewSummary, packet schema 3, review UI | Automated checks |
+| S03 | Handoff separates observations, limits and next review step | Authored text, source roles E01–E04 | Factual review aid with no normal ranges, diagnosis or treatment | reviewSummary, packet schema 4, review UI | Automated checks |
 | S04 | Greedy ties RESOLVE on all 169 comparable complete cases | public/benchmark.json, scripts/benchmark.ts | Finite synthetic model only | EVALUATION.md | Reproducible software result |
 
 Review status: no independent domain approval for A01–A04 or the handoff wording. No personal baseline, clinically validated fatigue scale, astronaut data or operational health inference is present. Browser storage is editable.
