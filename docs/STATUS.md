@@ -1,4 +1,4 @@
-# Prototype status · 14 November 2026 · policy v0.3
+# Prototype status · 15 November 2026 · policy v0.3
 
 ## Current delivery
 
@@ -10,13 +10,13 @@ Quality amendments append separate decisions; original observations are retained
 
 ## Verification in this revision
 
-22 automated tests pass. Coverage includes all 256 evidence/device/budget combinations, direct-execution guards, cumulative session allowance, original-record preservation, task input validity, and replaying exported planner inputs. TypeScript checking and production build pass.
+23 automated tests pass. Coverage includes all 256 evidence/device/budget combinations, direct-execution guards, cumulative session allowance, original-record preservation, task input validity, and replaying exported planner inputs. TypeScript checking and production build pass.
 
 Production desktop rendering, context capture, device fallback, both-device failure, task closure and a complete 180-second scripted task with downloaded JSON were verified in the public production app. See docs/VERIFICATION.md for exact observations and limits. Offline reload, tab-hidden interruption, mobile hardware and full accessibility checks remain unverified.
 
 ## Evaluation boundaries
 
-256 synthetic planning cases: 169 complete RESOLVE plans, 167 fixed order, 169 greedy. RESOLVE and greedy tie on all 169 comparable complete-case costs. Against fixed order: 15 lower declared costs, 152 ties, no higher costs among paired complete cases. Median saving is zero seconds. No patient/astronaut evaluation, measured crew-time benefit, medical approval or human usability study.
+256 synthetic planning cases: 169 complete RESOLVE plans, 167 fixed order, 169 greedy. RESOLVE and greedy tie on all 169 comparable complete-case costs. Against fixed order: 15 lower declared costs, 152 ties, no higher costs among paired complete cases. Median saving is zero seconds. No patient/astronaut evaluation, measured crew-time benefit or medical approval. Team-reported formative usability results are recorded in USABILITY.md and summarised below.
 
 ## Current v0.3 additions
 
@@ -28,7 +28,7 @@ New checks cover storage failures, malformed saved state, one-time reload recove
 
 ## Submission work remaining
 
-Independent task rehearsal and domain feedback; final demo recording; source/licence/dependency/credits review; accessible judge links; confirmed challenge fit, local requirements and submission. Site audience is public; signed-out browser access was verified. This prototype is not NASA-developed, NASA-endorsed, clinically validated or submitted to the competition.
+Domain feedback; participant-level usability notes and an itemised revision log; final judging-material review; confirmed challenge fit, local requirements, actual team contributions and submission. Public GitHub Pages links and the seven-page PDF were verified without authentication. Site audience is public; signed-out browser access was verified. This prototype is not NASA-developed, NASA-endorsed, clinically validated or submitted to the competition.
 
 ## Dashboard presentation revision · 14 November 2026
 
@@ -47,3 +47,8 @@ The dashboard now uses charcoal surfaces, locally served Space Grotesk typograph
 The default page now opens with a full-screen starfield, a centred serif RESOLVE title and a rotating decorative Earth projected from the locally served NASA texture. Three user-controlled chapters explain evidence collection, adaptation and human review. Scrolling moves the globe into a side-by-side composition; workspace entry uses a brief zoom transition. The opening includes a pause control, system reduced-motion support and a static fallback. The canvas renderer is unmounted when the review workspace opens, keeping its animation separate from task timing.
 
 The original review is reachable directly at `/#workspace`; Mission overview returns without clearing observations. Dashboard accents now share the opening's midnight-blue and ice palette. All 22 existing tests pass. Production desktop checks verified the textured globe, chapter navigation, pause toggle, scroll composition and chapter-specific entry into the review brief. See VERIFICATION.md for limits. No new medical capability, validation or measured usability benefit is claimed.
+
+
+## Formative usability results · reported 15 November 2026
+
+The team reports 13/25 scenario completions before improvements (52%) and 12/15 after revisions (80%). Follow-up participants comprise nine returning testers (8 completions) and six new testers (4 completions). These are team-supplied aggregates, not independently reviewed participant records. Small groups and prior exposure limit inference; no causal redesign effect is established. The proposed protocol, assistance criteria and exact error/change logs were not confirmed. See USABILITY.md. The live research view now separates these results from engineering verification and synthetic review data.

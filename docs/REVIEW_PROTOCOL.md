@@ -13,7 +13,7 @@ Record participant code (no name needed), date, relevant experience, task comple
 
 Blank record: participant code ___; version ___; tasks completed independently ___/5; assistance ___; errors ___; understanding of unresolved evidence ___; clearance misunderstanding ___; main quote ___; changes proposed ___.
 
-No independent participants have completed this exercise as of this revision.
+The team has reported two rounds of equipment-loss scenario testing: 13/25 completions initially and 12/15 after revisions (8/9 returning, 4/6 new). See [USABILITY.md](USABILITY.md) for provenance and limits. Use of this proposed five-task protocol has not been confirmed; do not infer five-task or unassisted completion from those aggregate counts.
 
 ## Questions for a qualified domain reviewer
 Provide the actual workflow, source mapping, provisional policy and task record with missed cues.

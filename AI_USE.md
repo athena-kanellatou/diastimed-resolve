@@ -14,3 +14,8 @@ The globe-led mission opening used AI-assisted React, CSS and native canvas code
 
 
 Machine-readable code, data and presentation provenance is provided in public/development-credits.json, referenced by package.json and the HTML head. Synthetic initial scenarios are SI-assisted authored demonstrations; benchmark results are deterministically enumerated by SI-assisted code. User-entered records are not represented as SI-generated. No generative image/video model or generated audio was used; the globe and starfield are procedural visualisations created by SI-assisted code.
+
+
+## Human-participant usability aggregates
+
+The counts in docs/USABILITY.md were supplied by the team owner as human-participant testing results. SI helped format the report and calculate percentages; these counts were not generated as synthetic study data. Participant-level records and detailed error/change logs were not supplied for review. Synthetic in-app observations and deterministic software benchmarks remain separate.

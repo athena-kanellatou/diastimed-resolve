@@ -75,3 +75,8 @@ Machine-readable SI credits were added to package.json, public/development-credi
 Public file links, globe texture loading and service-worker registration now use Vite's build base. The judging page returns to its own directory. GitHub Actions builds the application for `/diastimed-resolve/` and deploys it through GitHub Pages only after verification succeeds; root hosting remains supported.
 
 Local verification: 23 tests passed, including offline cache/navigation doubles for both `/` and `/diastimed-resolve/`, with navigation outside the project scope ignored. TypeScript and the project-path production build passed. Built HTML/CSS asset references and the judging return link were checked against actual output files. These doubles do not establish production-browser offline operation.
+
+
+## Team-reported formative usability results · 15 November 2026
+
+The team supplied aggregate equipment-loss scenario results: initial 13/25 completions (52%); revised 12/15 (80%), comprising 8/9 returning and 4/6 new participants. These reports are distinct from scripted browser checks and the synthetic planner benchmark. Counts and percentages were checked arithmetically; participant-level records, assistance criteria, exact errors and revision details were not provided for review. The live research view, current status, review-protocol status, README and submission draft now reflect the report. Historical verification sections above retain their original scope. No clinical, astronaut or causal redesign validation is added. See USABILITY.md.

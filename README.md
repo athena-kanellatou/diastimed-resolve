@@ -51,3 +51,7 @@ The dark dashboard uses locally served Space Grotesk type and a credited NASA Ea
 
 
 The default opening is a globe-led mission presentation with three chapters (evidence, adaptive planning and human review), a scroll-driven transition and direct workspace entry. `/#workspace` opens the working dashboard directly. A Mission overview control returns to the presentation without resetting review data. Motion can be paused and follows the system reduced-motion preference. Canvas or texture failure has a static visual fallback. Globe and star effects are decorative.
+
+## Formative usability evaluation
+
+Team-reported equipment-loss scenario completion was 13/25 (52%) before improvements and 12/15 (80%) after revisions. The revised round included nine returning participants (8 completions) and six new participants (4 completions). [Read the evaluation record](docs/USABILITY.md), including cohort differences, prior-exposure limitations and provenance. These results do not establish astronaut usability or clinical validity.
