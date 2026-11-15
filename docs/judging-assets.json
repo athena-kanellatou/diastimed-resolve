@@ -1,0 +1,50 @@
+{
+  "sourceVersion": 19,
+  "files": [
+    {
+      "path": "public/judging/slide-1.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-1.webp?v=60006cd16b70",
+      "sha256": "60006cd16b7058b9bc99ec3b390d1539838279f76540436a68333c999f04f6e8"
+    },
+    {
+      "path": "public/judging/slide-2.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-2.webp?v=0ef1a9f1952f",
+      "sha256": "0ef1a9f1952f4cb0bd96b612791545413ede826f6f16c42f4b1a5f0a744bfb05"
+    },
+    {
+      "path": "public/judging/slide-3.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-3.webp?v=a58c9bc9ba64",
+      "sha256": "a58c9bc9ba64b50bfceb6f113d20ff5bf17e488c66c808f910217d241828f369"
+    },
+    {
+      "path": "public/judging/slide-4.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-4.webp?v=3ed5c4e85fd9",
+      "sha256": "3ed5c4e85fd9c2c8c777cf5b69d0dd906a51c1688adf8d80bf32034b1ac1c8f4"
+    },
+    {
+      "path": "public/judging/slide-5.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-5.webp?v=357ae0805d81",
+      "sha256": "357ae0805d8114337db7ca6c26ff4981d1b6f6f7534842e61c7d702a9de0a040"
+    },
+    {
+      "path": "public/judging/slide-6.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-6.webp?v=bc5ccbff062c",
+      "sha256": "bc5ccbff062cb32d0507398ff2a60e7d7b44f9b1914d54d64a7f235994b1fa55"
+    },
+    {
+      "path": "public/judging/slide-7.webp",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/judging/slide-7.webp?v=ab2f8c03e965",
+      "sha256": "ab2f8c03e9652823edb62b747740df9bd8c22f00362bd74cc4a329108d1a85fc"
+    },
+    {
+      "path": "public/DiastiMed_RESOLVE_judging.pdf",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/DiastiMed_RESOLVE_judging.pdf",
+      "sha256": "76af0a2631895417e889d4f2b43f8cfb86ccab88f7711abd9ec18b937c328b7e"
+    },
+    {
+      "path": "public/DiastiMed_RESOLVE_judging.pptx",
+      "url": "https://diastimed-resolve.appealingholly1.chatgpt.site/DiastiMed_RESOLVE_judging.pptx",
+      "sha256": "f8b187db03da62f47c738d7d9acd64c0738a43755d87b4c05247f36df6d54591"
+    }
+  ]
+}

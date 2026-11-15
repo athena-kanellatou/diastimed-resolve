@@ -32,6 +32,8 @@ jobs:
         run: npm run benchmark
       - name: Verify benchmark against saved results
         run: node scripts/verify-benchmark.mjs
+      - name: Restore verified judging presentation assets
+        run: node scripts/restore-judging-assets.mjs
       - name: Prepare redistributable source
         run: python3 scripts/package-source.py
       - name: Type-check and build
