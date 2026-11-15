@@ -61,3 +61,7 @@ Team-reported equipment-loss scenario completion was 13/25 (52%) before improvem
 [Baseline findings](docs/BASELINE_VALIDATION.md) · [Validation and human inputs](docs/VALIDATION_PLAN.md) · [Policy register](docs/POLICY_REGISTER.md) · [Reproducible sensitivity](docs/SENSITIVITY.md) · [Expert review pack](docs/DOMAIN_REVIEW_PACK.md) · [Prospective usability V2](docs/USABILITY_PROTOCOL_V2.md).
 
 `npm run sensitivity` generates the saved deterministic analysis; `npm run sensitivity:check` compares all saved bytes. The original 256-case benchmark remains separate. Expert review and prospective V2 participant testing are pending; blank forms and synthetic examples are provided without invented findings.
+
+## Available evidence for this release
+
+[Evidence inventory](docs/AVAILABLE_EVIDENCE.md) distinguishes verified software behaviour, historical team-reported aggregates and additional reported participation with unestablished outcomes. The owner reports 30 additional testers (18 first-time, 12 returning); no completion rate is calculated for that report. Expert review and documented prospective V2 evaluation remain pending. These limits accompany the release; no individual records or favourable outcomes are reconstructed.

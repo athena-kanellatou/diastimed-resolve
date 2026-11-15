@@ -11,7 +11,7 @@ export default function SensitivitySummary(){
    <tr><th scope="row">Urgent-routing checks</th><td>{results.families.urgent}</td></tr>
   </tbody></table>
   <p>Across {results.cases.toLocaleString('en-US')} planning cases, {results.nextActionChanges.toLocaleString('en-US')} next actions and {results.feasibilityTransitions.toLocaleString('en-US')} complete/incomplete feasibility decisions changed from the default policy on the same inputs. All tested plans matched the permutation reference on achievable coverage and declared cost. This checks the software model; it does not establish medically correct rules or real crew-time savings.</p>
-  <p>Expert review and the new prospective participant round are pending. The historical team-reported usability counts above remain separate.</p>
+  <p>Expert review and a documented prospective participant round remain pending. Additional reported participation is described separately from the historical completion rates.</p>
   <div className="source-links"><a href={publicUrl('sensitivity/summary.json')} download>Analysis summary JSON ↗</a><a href={publicUrl('sensitivity/cases.ndjson.gz')} download>All calculated cases ↗</a><a href="https://github.com/athena-kanellatou/diastimed-resolve/blob/main/docs/SENSITIVITY.md" target="_blank" rel="noreferrer">Methods &amp; reproducibility ↗</a></div>
  </section>;
 }

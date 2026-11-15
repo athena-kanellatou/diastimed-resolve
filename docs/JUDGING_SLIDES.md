@@ -13,3 +13,7 @@ PowerPoint: https://athena-kanellatou.github.io/diastimed-resolve/DiastiMed_RESO
 Before source packaging and builds, run `node scripts/restore-judging-assets.mjs`. The script restores the authored screenshots, PDF and editable deck from the public version-19 artifact snapshot, verifying the exact SHA-256 of every file against judging-assets.json before writing. The repository tracks the semantic browser viewer and integrity manifest. GitHub Actions performs the restore step. A changed or unavailable remote artifact fails the build instead of silently replacing the presentation. The generated source archive includes the restored files.
 
 No registration or password is needed to view the GitHub Pages project or presentation.
+
+## Baseline snapshot and current release
+
+The pinned seven-slide PDF/PPTX/images are the previously verified baseline presentation. Slide 6's 23-test count describes that snapshot. The current release has 33 automated test functions and the additional sensitivity analysis in SENSITIVITY.md; the browser viewer links this release note without adding an eighth slide. The historical workflow screenshots remain illustrative of the retained equipment-loss behaviour. No extra human outcomes, expert approval or updated participant results are inserted into any deck format.

@@ -10,7 +10,7 @@ This revision checks software consistency, makes assumptions inspectable, and pr
 | Policy | POLICY_REGISTER.md, src/policy.ts | Implemented, unvalidated | Default values preserved; shared assessment/planner/export policy |
 | Sensitivity | SENSITIVITY.md, public/sensitivity | Calculated synthetic results | Saved inputs/configuration/cases and byte reproduction |
 | Expert | DOMAIN_REVIEW_PACK.md, blank feedback log | Pending authentic reviewer | Reviewer role, scope, date, build and actual feedback |
-| Usability V2 | USABILITY_PROTOCOL_V2.md, blank CSVs | Prepared for pilot; not frozen or run | Actual pilot, final freeze SHA/time, fresh-participant rows |
+| Usability V2 | USABILITY_PROTOCOL_V2.md, blank CSVs | Prepared; no documented prospective freeze or sessions | Actual pilot, final freeze SHA/time, fresh-participant rows |
 | Follow-up | CHANGE_LOG_VALIDATION.md | Engineering changes recorded | Real review/usability findings linked when supplied |
 
 ## Order of work with people
@@ -31,3 +31,7 @@ This revision checks software consistency, makes assumptions inspectable, and pr
 - Any surviving historical testing notes. Missing details stay “not recorded”; do not reconstruct outcomes from memory as if contemporaneous.
 
 No invitation, recruitment, email or competition submission is authorized by preparation alone. Review and testing can remain explicitly pending without invented evidence. Real records and identities should be kept outside the public repository; publish consented anonymized aggregates and narrowly scoped findings only.
+
+## Release with the available evidence
+
+The available evidence inventory is final for this technical release in AVAILABLE_EVIDENCE.md. The owner reports additional participation but the supplied materials do not establish additional human outcomes. Missing fields remain unavailable; no further records are assumed. Release the working prototype and reproducible technical evidence with expert review and adequately documented prospective usability evaluation pending. The human-dependent sequence above remains a future validation plan, not a prerequisite for describing the implemented software accurately.
