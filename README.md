@@ -2,7 +2,7 @@
 
 [![Verify RESOLVE](https://github.com/athena-kanellatou/diastimed-resolve/actions/workflows/verify.yml/badge.svg)](https://github.com/athena-kanellatou/diastimed-resolve/actions/workflows/verify.yml)
 
-[Live demo](https://diastimed-resolve.appealingholly1.chatgpt.site/) · [Verification record](docs/VERIFICATION.md) · [Reproduce locally](docs/REPRODUCE.md)
+[Live demo](https://athena-kanellatou.github.io/diastimed-resolve/) · [Verification record](docs/VERIFICATION.md) · [Reproduce locally](docs/REPRODUCE.md)
 
 Research prototype for NASA Space Apps 2026, Create Health Monitoring Software for Astronauts on Space Missions. Team: DiastiMed; Athens.
 
@@ -30,7 +30,7 @@ Completed checks allocate their declared estimated duration; interrupted tasks a
 
 ## Demo and independent reproduction
 
-Live demonstration: https://diastimed-resolve.appealingholly1.chatgpt.site/
+Live demonstration: https://athena-kanellatou.github.io/diastimed-resolve/
 
 Use Node.js 22 and `npm ci` for locked dependencies. See [reproduction instructions](docs/REPRODUCE.md), [current verification status](docs/STATUS.md) and [demo runbook](docs/DEMO_RUNBOOK.md). GitHub Actions configuration is included in `.github/workflows/verify.yml`; the first remote verification run passed installation, all tests, benchmark reproduction, source packaging and the production build. See [the verified run](https://github.com/athena-kanellatou/diastimed-resolve/actions/runs/43608783282).
 
@@ -38,7 +38,7 @@ Project code is MIT licensed. See [LICENSE](LICENSE), [third-party notices](THIR
 
 ## Judging and review
 
-[Seven-slide judging deck](https://diastimed-resolve.appealingholly1.chatgpt.site/judging.html) · [Submission draft](docs/SUBMISSION_DRAFT.md) · [Challenge fit](docs/CHALLENGE_FIT.md) · [Independent review protocols](docs/REVIEW_PROTOCOL.md).
+[Seven-slide judging deck](https://athena-kanellatou.github.io/diastimed-resolve/judging.html) · [Submission draft](docs/SUBMISSION_DRAFT.md) · [Challenge fit](docs/CHALLENGE_FIT.md) · [Independent review protocols](docs/REVIEW_PROTOCOL.md).
 
 The v0.3 brief separates facts, limits and next steps. Storage failure remains visible. Reload recovery saves no task result. Neither the brief nor the browser task makes a clinical assessment. Full current verification and unresolved checks are in docs/VERIFICATION.md.
 

@@ -1,3 +1,4 @@
+import {publicUrl} from './urls';
 import{Activity,ArrowRight,ArrowUpRight,Check,CheckCircle2,Clock3,Download,FileText,LifeBuoy,Monitor,Tablet,ShieldCheck,SlidersHorizontal,AlertTriangle,X,Link2,Moon,MessageSquare,Focus}from'lucide-react';
 import{plan,evidence,remainingBudget,reviewSummary,requirements,scenarioList,type State,type Check as CheckType}from'./domain';
 export type PlanChange={before:ReturnType<typeof plan>;after:ReturnType<typeof plan>;reason:string};
@@ -14,7 +15,7 @@ export default function Dashboard({state,scenarioId,comparison,onDismiss,onStart
  return <div className="dashboard">
   <div className="d-flight-deck">
    <section className="d-masthead" aria-labelledby="d-title">
-    <img className="d-earth" src="/assets/earth-horizon.jpg" alt="" width="1041" height="585" fetchPriority="high"/>
+    <img className="d-earth" src={publicUrl('assets/earth-horizon.jpg')} alt="" width="1041" height="585" fetchPriority="high"/>
     <div className="d-earth-shade"/>
     <div className="d-heading">
      <div className="d-kicker"><span className="d-cross"/> HUMAN SPACEFLIGHT / CREW EVIDENCE</div>

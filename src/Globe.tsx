@@ -1,3 +1,4 @@
+import {publicUrl} from './urls';
 import {useEffect,useRef,useState} from 'react';
 
 // A decorative sphere projection of a NASA texture. Geometry, lighting and
@@ -45,7 +46,7 @@ export default function Globe({paused,phase=1}:{paused:boolean;phase?:number}){
   const img=new Image();img.onload=()=>{
    if(disposed)return;
    try{const map=document.createElement('canvas');map.width=img.naturalWidth;map.height=img.naturalHeight;const ctx=map.getContext('2d')!;ctx.drawImage(img,0,0);texture=ctx.getImageData(0,0,map.width,map.height).data;width=map.width;height=map.height;for(let i=0;i<count;i++)row[i]=Math.min(height-1,Math.floor(row[i]/65535*height));loaded=true;dirty=true;}catch{setFallback(true);}
-  };img.onerror=()=>{if(!disposed)setFallback(true);};img.src='/assets/blue-marble.jpg';raf=requestAnimationFrame(draw);
+  };img.onerror=()=>{if(!disposed)setFallback(true);};img.src=publicUrl('assets/blue-marble.jpg');raf=requestAnimationFrame(draw);
   return()=>{disposed=true;cancelAnimationFrame(raf);observer.disconnect();img.onload=null;img.onerror=null;};
  },[]);
  return <div className={'mission-globe '+(fallback?'has-fallback':'')} aria-hidden="true"><div className="mission-globe-fallback"/><canvas ref={canvas}/></div>;

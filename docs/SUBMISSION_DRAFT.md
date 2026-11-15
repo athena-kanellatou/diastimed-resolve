@@ -24,7 +24,7 @@ ChatGPT/Codex assisted research, concept development, implementation, synthetic 
 Do not attribute AI-generated work or invented teammate roles as independent human work.
 
 ## Links
-App: https://diastimed-resolve.appealingholly1.chatgpt.site/
+App: https://athena-kanellatou.github.io/diastimed-resolve/
 Source: https://github.com/athena-kanellatou/diastimed-resolve
 Judging slides: /judging.html on the app origin (verify after publication).
 

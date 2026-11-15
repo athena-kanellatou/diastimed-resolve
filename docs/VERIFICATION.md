@@ -69,3 +69,9 @@ All 22 existing automated engine/storage/offline-double checks passed. TypeScrip
 ## Submission disclosure metadata · 15 November 2026
 
 Machine-readable SI credits were added to package.json, public/development-credits.json, the HTML head and exported review packets. The source archive includes the credits file. They distinguish SI-assisted code and authored synthetic scenarios from user-entered observations and deterministically computed benchmark results. No generative image/video model or generated audio was used. The judging PDF was checked with a PDF parser: seven pages; Author metadata acknowledges AI-assisted development. An anonymous request to the raw public GitHub PDF returned HTTP 200. Collection policy and benchmark cases are unchanged.
+
+## Project-path hosting — 15 November 2026
+
+Public file links, globe texture loading and service-worker registration now use Vite's build base. The judging page returns to its own directory. GitHub Actions builds the application for `/diastimed-resolve/` and deploys it through GitHub Pages only after verification succeeds; root hosting remains supported.
+
+Local verification: 23 tests passed, including offline cache/navigation doubles for both `/` and `/diastimed-resolve/`, with navigation outside the project scope ignored. TypeScript and the project-path production build passed. Built HTML/CSS asset references and the judging return link were checked against actual output files. These doubles do not establish production-browser offline operation.
